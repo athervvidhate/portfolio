@@ -7,7 +7,7 @@
 }
 
 html {
-  --color-accent: #723D46
+  --color-accent: #723d46;
 }
 
 body {
@@ -20,17 +20,8 @@ body {
   padding: 1rem;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  align-items: flex-start;
-}
-
-label {
-  display: flex;
-  gap: 0.5em;
-  align-items: center;
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
 }
 
 nav {
@@ -44,7 +35,6 @@ nav {
     color: inherit;
     text-align: center;
     padding: 0.5em;
-    
   }
 }
 
@@ -53,11 +43,51 @@ nav {
   margin-bottom: 0em;
 }
 
-#name, #photo {
+h1,
+#photo {
   margin-bottom: 1.5rem;
 }
 
 a:hover {
   border-bottom: 0.4em solid var(--color-accent);
-  background-color: oklch(from var(--color-accent) 95% 5% h)
+  background-color: oklch(from var(--color-accent) 95% 5% h);
+}
+
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em;
+}
+
+label {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+}
+
+button {
+  grid-column: 1 / -1;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1em;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+}
+
+h1 {
+  margin: 0;
+  font-size: 400%;
+}
+
+article {
+  gap: 1em;
 }
