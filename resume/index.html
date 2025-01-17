@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="resume-styles.css" />
     <title>Resume</title>
   </head>
   <body>
@@ -14,161 +15,250 @@
       <a class="curr" href="../resume/index.html">Resume</a>
       <a href="https://github.com/athervvidhate" target="_blank">Github</a>
     </nav>
-    <h1>Resume</h1>
-    <body>
-      <div style="text-align: center">
-        <h2>Atherv Vidhate</h2>
-        <p>
-          (949)-636-9370 |
-          <a href="mailto:athervvidhate@gmail.com">athervvidhate@gmail.com</a> |
-          <a href="https://linkedin.com/in/athervvidhate"
-            >linkedin.com/in/athervvidhate</a
-          >
-          |
-          <a href="https://github.com/athervvidhate"
-            >github.com/athervvidhate</a
-          >
-        </p>
-      </div>
 
-      <h2>Education & Certifications</h2>
-      <ul>
-        <li>
-          <strong>University of California, San Diego</strong> - La Jolla, CA<br />
-          Bachelor of Science in Data Science -
-          <em>Expected Graduation: 2026</em>
-          <ul>
-            <li>
-              Relevant Courses: Data Structures and Algorithms, Mathematical
-              Theory of Machine Learning, Statistical Analysis
-            </li>
-          </ul>
-        </li>
-        <li>
-          <strong>OCI Generative AI Certified Professional</strong> - Oracle<br />
-          <em>July 2024</em>
-          <ul>
-            <li>
-              Relevant Skills: Large Language Models, Retrieval-Augmented
-              Generation, Semantic Search, Vector Databases, LangChain
-            </li>
-          </ul>
-        </li>
-      </ul>
+    <div class="resume-container">
+      <header class="resume-header">
+        <h1 class="resume-name">Atherv Vidhate</h1>
+        <div class="resume-contact">
+          <span>(949)-636-9370</span>
+          <a href="mailto:athervvidhate@gmail.com">athervvidhate@gmail.com</a>
+          <a href="https://linkedin.com/in/athervvidhate">LinkedIn</a>
+          <a href="https://github.com/athervvidhate">GitHub</a>
+        </div>
+      </header>
 
-      <h2>Experience</h2>
-      <ul>
-        <li>
-          <strong>Cordial</strong> - La Jolla, CA<br />
-          Technology Consultant - <em>Apr 2024 – June 2024</em>
-          <ul>
-            <li>
-              Spearheaded the development of a comprehensive tagging system,
-              ensuring scalability.
-            </li>
-            <li>
-              Conducted in-depth analysis using Pendo Dashboards, providing
-              actionable insights.
-            </li>
-          </ul>
-        </li>
-        <li>
-          <strong>Triton Consulting Group</strong> - La Jolla, CA<br />
-          Associate - <em>Jan 2024 – Present</em>
-          <ul>
-            <li>
-              Developed a Tableau dashboard analyzing club demographics and
-              expansion strategies.
-            </li>
-            <li>
-              Utilized Excel for data analysis, improving efficiency and
-              decision accuracy.
-            </li>
-            <li>
-              Led client outreach initiatives, securing responses for new
-              collaborations.
-            </li>
-          </ul>
-        </li>
-        <li>
-          <strong>Accelerant</strong> - Mission Viejo, CA<br />
-          Machine Learning Intern - <em>June 2022 – Aug 2022</em>
-          <ul>
-            <li>
-              Analyzed a sentiment analysis model, generating insights from
-              5000+ reviews.
-            </li>
-            <li>
-              Enhanced practical understanding of AI concepts through hands-on
-              training.
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <section class="resume-section">
+        <h2 class="resume-section-title">Education & Certifications</h2>
+        <ul class="resume-list">
+          <li class="resume-item">
+            <div class="resume-item-header">
+              <div>
+                <div class="resume-item-title">
+                  University of California, San Diego
+                </div>
+                <div class="resume-item-subtitle">
+                  Bachelor of Science in Data Science
+                </div>
+              </div>
+              <div class="resume-item-date">Expected Graduation: 2026</div>
+            </div>
+            <ul class="resume-item-details">
+              <li>
+                Relevant Courses: Data Structures and Algorithms, Mathematical
+                Theory of Machine Learning, Statistical Analysis
+              </li>
+            </ul>
+          </li>
+          <li class="resume-item">
+            <div class="resume-item-header">
+              <div>
+                <div class="resume-item-title">
+                  OCI Generative AI Certified Professional
+                </div>
+                <div class="resume-item-subtitle">Oracle</div>
+              </div>
+              <div class="resume-item-date">July 2024</div>
+            </div>
+            <ul class="resume-item-details">
+              <li>
+                Relevant Skills: Large Language Models, Retrieval-Augmented
+                Generation, Semantic Search, Vector Databases, LangChain
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
 
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <strong
-            ><a href="https://zubinss.github.io/power-outage-analysis/"
-              >Power Outage Analysis</a
-            ></strong
-          >
-          - Python, scikit-learn, Plotly, numpy, Pandas<br />
-          <em>Nov 2024 – Dec 2024</em>
-          <ul>
-            <li>
-              Cleaned and transformed a dataset on U.S. power outages,
-              engineering new features.
-            </li>
-            <li>
-              Developed Random Forest models, improving accuracy by 5% through
-              feature tuning.
-            </li>
-            <li>
-              Conducted fairness analysis for equitable model performance across
-              states.
-            </li>
-          </ul>
-        </li>
-        <li>
-          <strong>MiniGit</strong> - Java, Git, Serialization, Persistence<br />
-          <em>June 2024 – July 2024</em>
-          <ul>
-            <li>
-              Implemented a custom version control system replicating core Git
-              commands.
-            </li>
-            <li>
-              Utilized Java for data persistence with Hashmaps and
-              serialization.
-            </li>
-            <li>
-              Optimized performance for version tracking and data retrieval.
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <section class="resume-section">
+        <h2 class="resume-section-title">Experience</h2>
+        <ul class="resume-list">
+          <li class="resume-item">
+            <div class="resume-item-header">
+              <div>
+                <div class="resume-item-title">Technology Consultant</div>
+                <div class="resume-item-subtitle">Cordial - La Jolla, CA</div>
+              </div>
+              <div class="resume-item-date">Apr 2024 – June 2024</div>
+            </div>
+            <ul class="resume-item-details">
+              <li>
+                Spearheaded the development and implementation of a
+                comprehensive categorization and naming structure, creating over
+                100 tags and 20 categories in a Pendo auditing and tagging
+                system, ensuring the scalability and adaptability of the system.
+              </li>
+              <li>
+                Conducted an in-depth analysis of potential improvement areas
+                for the client’s product platform by leveraging the advanced
+                capabilities of Pendo Dashboards and Data Explorer reports,
+                providing actionable insights to enhance platform efficiency.
+              </li>
+            </ul>
+          </li>
+          <li class="resume-item">
+            <div class="resume-item-header">
+              <div>
+                <div class="resume-item-title">Associate</div>
+                <div class="resume-item-subtitle">
+                  Triton Consulting Group - La Jolla, CA
+                </div>
+              </div>
+              <div class="resume-item-date">Jan 2024 – Present</div>
+            </div>
+            <ul class="resume-item-details">
+              <li>
+                Developed and presented a comprehensive Tableau dashboard
+                analyzing club demographics, retention strategies, and expansion
+                opportunities, providing actionable insights to increase member
+                engagement and attract diverse new members.
+              </li>
+              <li>
+                Utilized advanced Excel techniques during multiple training
+                sessions to conduct data analysis and automate repetitive tasks,
+                significantly improving overall project efficiency and
+                contributing to the accuracy and reliability of data-driven
+                decisions.
+              </li>
+              <li>
+                Took an active role in the organization’s Tech Committee to
+                support member engagement through innovative projects with local
+                companies, leading client outreach initiatives by sending out
+                40+ cold emails to potential collaborators and successfully
+                securing responses, resulting in new opportunities that expanded
+                the scope and impact of the club’s technical initiatives.
+              </li>
+            </ul>
+          </li>
+          <li class="resume-item">
+            <div class="resume-item-header">
+              <div>
+                <div class="resume-item-title">Machine Learning Intern</div>
+                <div class="resume-item-subtitle">
+                  Accelerant - Mission Viejo, CA
+                </div>
+              </div>
+              <div class="resume-item-date">June 2022 – Aug 2022</div>
+            </div>
+            <ul class="resume-item-details">
+              <li>
+                Conducted an in-depth investigation and evaluation of a machine
+                learning sentiment analysis model analyzing 5000+ reviews,
+                generating comprehensive insights into customer satisfaction
+                levels and contributing to the development of data-driven
+                improvement strategies to address specific pain points and
+                enhance user experience.
+              </li>
+              <li>
+                Acquired practical, hands-on experience by participating in
+                specialized development training sessions, significantly
+                enhancing theoretical knowledge and practical understanding of
+                advanced AI concepts and their real-world applications.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
 
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>
-          <strong>Languages:</strong> Java, Python, JavaScript, HTML/CSS,
-          MATLAB, SQL
-        </li>
-        <li>
-          <strong>Developer Tools:</strong> Git, VS Code, Visual Studio,
-          PyCharm, IntelliJ
-        </li>
-        <li>
-          <strong>Libraries:</strong> scikit-learn, pandas, NumPy, Matplotlib,
-          Plotly, Beautiful Soup
-        </li>
-        <li>
-          <strong>Data Analysis & Visualization Tools:</strong> Tableau, Pendo,
-          Microsoft Office
-        </li>
-      </ul>
-    </body>
+      <section class="resume-section">
+        <h2 class="resume-section-title">Projects</h2>
+        <ul class="resume-list">
+          <li class="resume-item">
+            <div class="resume-item-header">
+              <div>
+                <div class="resume-item-title">
+                  <a href="https://zubinss.github.io/power-outage-analysis/"
+                    >Power Outage Analysis</a
+                  >
+                </div>
+                <div class="resume-item-subtitle">
+                  Python, scikit-learn, Plotly, numpy, Pandas
+                </div>
+              </div>
+              <div class="resume-item-date">Nov 2024 – Dec 2024</div>
+            </div>
+            <ul class="resume-item-details">
+              <li>
+                Conducted comprehensive data cleaning of a 1,500+ row dataset on
+                U.S. power outages, transforming time-based data into structured
+                formats and engineering 5 new features for enhanced analysis.
+              </li>
+              <li>
+                Developed and optimized machine learning models to predict
+                outage severity using Random Forest classifiers, achieving a 5%
+                accuracy improvement between models through feature engineering
+                and hyperparameter tuning.
+              </li>
+              <li>
+                Conducted fairness analysis to evaluate model performance across
+                state populations, ensuring equitable recall rates for severe
+                outages in both high and low-population states, finding the
+                model to be fair with high certainty.
+              </li>
+            </ul>
+          </li>
+          <li class="resume-item">
+            <div class="resume-item-header">
+              <div>
+                <div class="resume-item-title">MiniGit</div>
+                <div class="resume-item-subtitle">
+                  Java, Git, Serialization, Persistence
+                </div>
+              </div>
+              <div class="resume-item-date">June 2024 – July 2024</div>
+            </div>
+            <ul class="resume-item-details">
+              <li>
+                Designed and implemented a fully functional custom version
+                control system, replicating essential 10+ Git commands such as
+                init, add, rm, commit, branch, log, checkout, reset, and status
+                to mirror core version control capabilities.
+              </li>
+              <li>
+                Gained a deep understanding of Git’s core functionality,
+                including file tracking, branching, and commit history, to
+                ensure accurate modeling of these features within the version
+                control system for seamless version management.
+              </li>
+              <li>
+                Leveraged Java programming to implement data persistence by
+                utilizing Hashmaps and serialization techniques, ensuring the
+                effective management of data and reliable maintenance of version
+                history across multiple system states.
+              </li>
+              <li>
+                Delved into advanced topics such as object serialization, data
+                structures, and algorithm design to optimize the system’s
+                performance, enhance its reliability, and improve the efficiency
+                of operations like version tracking and data retrieval.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="resume-section">
+        <h2 class="resume-section-title">Technical Skills</h2>
+        <ul class="resume-skills">
+          <li class="resume-skills-item">
+            <span class="resume-skills-category">Languages:</span>
+            Java, Python, JavaScript, HTML/CSS, MATLAB, SQL
+          </li>
+          <li class="resume-skills-item">
+            <span class="resume-skills-category">Developer Tools:</span>
+            Git, VS Code, Visual Studio, PyCharm, IntelliJ
+          </li>
+          <li class="resume-skills-item">
+            <span class="resume-skills-category">Libraries:</span>
+            scikit-learn, pandas, NumPy, Matplotlib, Plotly, Beautiful Soup
+          </li>
+          <li class="resume-skills-item">
+            <span class="resume-skills-category"
+              >Data Analysis & Visualization Tools:</span
+            >
+            Tableau, Pendo, Microsoft Office
+          </li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
