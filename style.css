@@ -20,7 +20,12 @@ body {
   padding: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
@@ -38,6 +43,22 @@ nav {
   }
 }
 
+nav a:hover {
+  border-bottom: 0.4em solid var(--color-accent);
+  background-color: oklch(from var(--color-accent) 95% 5% h);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-accent);
+}
+
+a:hover {
+  text-decoration: underline;
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
 .curr {
   border-bottom: 0.4em solid oklch(80% 3% 200);
   margin-bottom: 0em;
@@ -46,11 +67,6 @@ nav {
 h1,
 #photo {
   margin-bottom: 1.5rem;
-}
-
-a:hover {
-  border-bottom: 0.4em solid var(--color-accent);
-  background-color: oklch(from var(--color-accent) 95% 5% h);
 }
 
 input,
@@ -90,4 +106,15 @@ h1 {
 
 article {
   gap: 1em;
+}
+
+ul {
+  margin-left: 20px; 
+
+}
+
+ul ul {
+
+  margin-left: 40px; 
+
 }
