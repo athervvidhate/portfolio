@@ -29,7 +29,7 @@ for (let p of pages) {
 
   a.classList.toggle(
     'curr',
-    a.host === location.host && a.pathname === location.pathname
+    a.host === location.host && ("/portfolio" + a.pathname) === location.pathname
   );
 
   if (a.host !== location.host) {
