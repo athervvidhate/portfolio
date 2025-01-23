@@ -12,6 +12,7 @@ let pages = [
 ];
 
 const ARE_WE_HOME = document.documentElement.classList.contains("home");
+const BASE_PATH = "/portfolio";
 
 let nav = document.createElement("nav");
 document.body.prepend(nav);
@@ -19,7 +20,7 @@ document.body.prepend(nav);
 for (let p of pages) {
   let url = p.url;
 
-  url = !ARE_WE_HOME && !url.startsWith("http") ? "../" + url : url;
+  url = !ARE_WE_HOME && !url.startsWith("http") ? `${BASE_PATH}/${url}` : url;
 
   let title = p.title;
   let a = document.createElement("a");
@@ -28,13 +29,11 @@ for (let p of pages) {
   nav.append(a);
 
   a.classList.toggle(
-    'curr',
-    a.host === location.host && ("/portfolio" + a.pathname) === location.pathname
+    "curr",
+    a.host === location.host && a.pathname === location.pathname
   );
 
   if (a.host !== location.host) {
-    a.target = "_blank"
+    a.target = "_blank";
   }
-
-  
 }
