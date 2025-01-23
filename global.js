@@ -12,7 +12,8 @@ let pages = [
 ];
 
 const ARE_WE_HOME = document.documentElement.classList.contains("home");
-const BASE_PATH = "/portfolio";
+const IS_LOCAL = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+const BASE_PATH = IS_LOCAL ? "" : "/portfolio";
 
 let nav = document.createElement("nav");
 document.body.prepend(nav);
