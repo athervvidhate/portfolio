@@ -1,4 +1,4 @@
-Modern Resume Styles .resume-container {
+.resume-container {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
@@ -6,6 +6,7 @@ Modern Resume Styles .resume-container {
   line-height: 1.6;
   color: #2d3748;
   background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .resume-header {
