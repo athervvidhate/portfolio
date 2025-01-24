@@ -1,6 +1,30 @@
+document.body.insertAdjacentHTML(
+    "afterbegin",
+    `
+          <label class="color-scheme">
+              Theme:
+              <select id='theme'>
+                <option value="light dark">Automatic</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+              </select>
+          </label>`
+  );
+  
+  let select = document.querySelector("#theme");
+  select.addEventListener("input", function (event) {
+    document.documentElement.style.setProperty("color-scheme", event.target.value);
+    localStorage.colorScheme = event.target.value;
+  });
+
+if ("colorScheme" in localStorage) {
+  document.documentElement.style.setProperty("color-scheme", localStorage.colorScheme);
+  select.value = localStorage.colorScheme;
+}
+
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
-}
+}``
 
 let pages = [
   { url: "", title: "Home" },
@@ -12,7 +36,9 @@ let pages = [
 ];
 
 const ARE_WE_HOME = document.documentElement.classList.contains("home");
-const IS_LOCAL = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+const IS_LOCAL =
+  window.location.hostname === "localhost" ||
+  window.location.hostname === "127.0.0.1";
 const BASE_PATH = IS_LOCAL ? "" : "/portfolio";
 
 let nav = document.createElement("nav");
