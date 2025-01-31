@@ -1,13 +1,13 @@
 [
     {
-      "title": "Lorem ipsum dolor sit.",
+      "title": "Power Outage Analysis",
       "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "\n          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo\n          dignissimos inventore id alias consequatur rerum dolor corrupti vel\n          modi, velit fugit odio aliquam et veritatis, quidem nostrum, debitis\n          obcaecati officia!\n        "
+      "description": "Conducted data cleaning on a 1,500+ row dataset of U.S. power outages, structured time-based data, and engineered 5 new features for improved analysis. Developed and optimized Random Forest models to predict outage severity, achieving a 5% accuracy boost through feature engineering and hyperparameter tuning. Performed fairness analysis to ensure equitable recall rates for severe outages across states, confirming the model's fairness with high certainty."
     },
     {
-      "title": "Sapiente, doloremque magnam. Cupiditate.",
+      "title": "MiniGit",
       "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-      "description": "\n          Laboriosam delectus quasi laborum soluta minima iusto voluptatum quos,\n          voluptatem omnis quam veniam porro! Amet neque nobis fugiat sunt\n          dolores eveniet! Ullam fugit culpa rem? Quidem aspernatur mollitia\n          modi rerum.\n        "
+      "description": "Developed a custom version control system inspired by Git, implementing core commands such as init, add, commit, rm, log, globalLog, find, checkout, branch, rmBranch, reset, and status. This system replicates key Git functionalities, enabling repository initialization, file tracking, commit history management, branch handling, and state restoration."
     },
     {
       "title": "Distinctio pariatur ut sed?",
