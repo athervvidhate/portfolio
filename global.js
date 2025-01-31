@@ -1,6 +1,6 @@
 document.body.insertAdjacentHTML(
-    "afterbegin",
-    `
+  "afterbegin",
+  `
           <label class="color-scheme">
               Theme:
               <select id='theme'>
@@ -9,22 +9,29 @@ document.body.insertAdjacentHTML(
                 <option value="dark">Dark</option>
               </select>
           </label>`
+);
+
+let select = document.querySelector("#theme");
+select.addEventListener("input", function (event) {
+  document.documentElement.style.setProperty(
+    "color-scheme",
+    event.target.value
   );
-  
-  let select = document.querySelector("#theme");
-  select.addEventListener("input", function (event) {
-    document.documentElement.style.setProperty("color-scheme", event.target.value);
-    localStorage.colorScheme = event.target.value;
-  });
+  localStorage.colorScheme = event.target.value;
+});
 
 if ("colorScheme" in localStorage) {
-  document.documentElement.style.setProperty("color-scheme", localStorage.colorScheme);
+  document.documentElement.style.setProperty(
+    "color-scheme",
+    localStorage.colorScheme
+  );
   select.value = localStorage.colorScheme;
 }
 
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
-}``
+}
+``;
 
 let pages = [
   { url: "", title: "Home" },
@@ -63,4 +70,32 @@ for (let p of pages) {
   if (a.host !== location.host) {
     a.target = "_blank";
   }
+}
+
+export async function fetchJSON(url) {
+  try {
+    // Fetch the JSON file from the given URL
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch projects: ${response.statusText}`);
+    }
+
+    const data = await response.json();
+    return data;
+
+  } catch (error) {
+    console.error("Error fetching or parsing JSON data:", error);
+  }
+}
+
+export function renderProjects(project, containerElement, headingLevel = 'h2') {
+  const article = document.createElement('article');
+
+  article.innerHTML = `
+  <h3>${project.title}</h3>
+  <img src="${project.image}" alt="${project.title}">
+  <p>${project.description}</p>
+  `;
+  containerElement.appendChild(article);
 }
