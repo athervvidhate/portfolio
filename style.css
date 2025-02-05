@@ -8,13 +8,14 @@
 
 html {
   --color-accent: #723d46;
+  --color-legend: #d9d9d9;
   --border-color: oklch(50% 10% 200 / 40%);
   color-scheme: light dark;
 }
 
 body {
   font: 100%/1.5 system-ui;
-  max-width: 50rem;
+  max-width: 60rem;
   margin-inline: auto;
   padding: 1rem;
 }
@@ -158,4 +159,56 @@ ul ul {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
+}
+
+article img {
+  max-width: 90%;
+  height: auto;
+}
+
+article h3 {
+  text-align: left;
+}
+
+.pie-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+  padding-bottom: 2em;
+}
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+}
+
+
+.legend {
+  border: 2px solid var(--color-legend);
+  border-radius: 3px;
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  flex:1;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:0.5em;
+}
+
+.swatch {
+  width: 10px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--color)
+}
+
+li em {
+  color: var(--color-legend);
 }
