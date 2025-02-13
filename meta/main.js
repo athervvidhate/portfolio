@@ -75,7 +75,7 @@ function displayStats() {
   const averageFileLength = d3.mean(fileLengths, (d) => d[1]);
   const avgLength = dl.append("div");
   avgLength.append("dt").text("Average File Length");
-  avgLength.append("dd").text(averageFileLength);
+  avgLength.append("dd").text(Math.round(averageFileLength));
 
   const workByPeriod = d3.rollups(
     data,
