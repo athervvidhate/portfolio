@@ -1,8 +1,12 @@
 {
     "rewrites": [
       {
+        "source": "/poweroutageanalysis",
+        "destination": "https://illuminating-the-dark.vercel.app"
+      },
+      {
         "source": "/poweroutageanalysis/:path*",
-        "destination": "https://illuminating-the-dark.vercel.app//:path*"
+        "destination": "https://illuminating-the-dark.vercel.app/:path*"
       }
     ]
   }
