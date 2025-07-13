@@ -1,17 +1,36 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
+import Typewriter from 'typewriter-effect'
 
 export default function Portfolio() {
   const messages = [
-    "I'm a Data Science Student",
+    "I'm a student at UC San Diego (go tritons!)",
+    "I'm studying data science",
     "I analyze data to find insights",
     "I build predictive models",
-    "I love machine learning & AI",
+    "I love machine learning and AI",
+    "A bit about me:",
+    "I'm honestly a huge tech nerd",
+    "I've jailbroken every single device I've owned",
+    "Gotten super into house music nowadays",
+    "May have tinnitus...",
+    "Thanks for visiting!",
+    "I'm a student at UC San Diego (go tritons!)",
+    "I'm studying data science",
+    "I analyze data to find insights",
+    "I build predictive models",
+    "I love machine learning and AI",
+    "A bit about me:",
+    "I'm honestly a huge tech nerd",
+    "I've jailbroken every single device I've owned",
+    "Gotten super into house music nowadays",
+    "May have tinnitus...",
+    "Thanks for visiting!",
+    "...",
+    "if you made it this far, here's a little easter egg",
+    "https://www.tiktok.com/t/ZP8hme11u/"
   ]
 
-  const [currentMessageIndex, setCurrentMessageIndex] = useState(0)
-  const [currentText, setCurrentText] = useState("")
-  const [isDeleting, setIsDeleting] = useState(false)
-  const [isPaused, setIsPaused] = useState(false)
+
   const [activeTab, setActiveTab] = useState("education")
   const [showHeader, setShowHeader] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -39,37 +58,7 @@ export default function Portfolio() {
     setIsDarkMode(!isDarkMode);
   };
 
-  useEffect(() => {
-    const currentMessage = messages[currentMessageIndex]
 
-    const timeout = setTimeout(
-      () => {
-        if (isPaused) {
-          setIsPaused(false)
-          setIsDeleting(true)
-          return
-        }
-
-        if (isDeleting) {
-          if (currentText.length > 0) {
-            setCurrentText(currentText.slice(0, -1))
-          } else {
-            setIsDeleting(false)
-            setCurrentMessageIndex((prev) => (prev + 1) % messages.length)
-          }
-        } else {
-          if (currentText.length < currentMessage.length) {
-            setCurrentText(currentMessage.slice(0, currentText.length + 1))
-          } else {
-            setIsPaused(true)
-          }
-        }
-      },
-      isDeleting ? 50 : isPaused ? 2000 : 100,
-    )
-
-    return () => clearTimeout(timeout)
-  }, [currentText, isDeleting, isPaused, currentMessageIndex, messages])
 
   useEffect(() => {
     const onScroll = () => {
@@ -88,36 +77,34 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Customer Churn Prediction",
-      description: "Machine learning model to predict customer churn using ensemble methods and feature engineering",
-      tech: ["Python", "Scikit-learn", "Pandas", "XGBoost"],
-      github: "#",
-      demo: "#",
-      image: "https://via.placeholder.com/400x200/374151/ffffff?text=Churn+Analysis",
+      title: "Concert Scout AI",
+      description: "Designed and launched an AI-powered concert recommendation platform for 150+ users, building a multi-agent system to deliver personalized suggestions and deploying scalable infrastructure with user session management and analytics tracking.",
+      tech: ["Python", "FastAPI", "Redis", "Next.js", "Google ADK"],
+      github: "https://github.com/athervvidhate/ConcertScoutAI",
+      demo: "https://concertscout.app",
+      image: "/assets/concertscout.png",
     },
     {
-      title: "Stock Price Analysis Dashboard",
-      description: "Interactive dashboard for analyzing stock trends with real-time data visualization",
-      tech: ["Python", "Streamlit", "Plotly", "Yahoo Finance API"],
-      github: "#",
-      demo: "#",
-      image: "https://via.placeholder.com/400x200/374151/ffffff?text=Stock+Dashboard",
+      title: "Power Outage Analysis",
+      description: 'Cleaned and engineered features from power outage dataset and used techniques like one-hot encoding, hyperparameter tuning, and cross-validation to build optimized Random Forest models predicting outage severity, achieving a 15% accuracy improvement.',
+      tech: ["Python", "scikit-learn", "Hypothesis Testing", "Data Science Lifecycle"],
+      demo: "https://atherv.com/poweroutageanalysis",
+      image: "/assets/poweroutages.png",
     },
     {
-      title: "Natural Language Sentiment Analysis",
-      description: "Deep learning model for sentiment analysis of social media posts and reviews",
-      tech: ["Python", "TensorFlow", "NLTK", "Transformers"],
-      github: "#",
-      demo: "#",
-      image: "https://via.placeholder.com/400x200/374151/ffffff?text=NLP+Sentiment",
+      title: "Body Sway Research Lab",
+      description: "Developed an interactive data visualization exploring how body sway affects balance and posture, featuring animated scrollytelling elements and real-time statistical analysis through permutation testing to validate research findings.",
+      tech: ["JavaScript", "D3.js", "Statistical Analysis"],
+      github: "https://github.com/athervvidhate/hipsdontlie",
+      demo: "https://athervvidhate.github.io/hipsdontlie/",
+      image: "/assets/bodysway.png",
     },
     {
-      title: "Sales Forecasting Model",
-      description: "Time series forecasting model for retail sales prediction using ARIMA and LSTM",
-      tech: ["Python", "TensorFlow", "Statsmodels", "Matplotlib"],
-      github: "#",
-      demo: "#",
-      image: "https://via.placeholder.com/400x200/374151/ffffff?text=Sales+Forecast",
+      title: "MiniGit",
+      description: "Developed a custom version control system, implementing 10+ Git commands with Hashmaps and serialization for efficient data persistence and version tracking.",
+      tech: ["Java", "Version Control", "System Architecture"],
+      github: "https://github.com/athervvidhate/MiniGit",
+      image: "/assets/minigit.png",
     },
   ]
 
@@ -145,28 +132,35 @@ export default function Portfolio() {
 
   const experience = [
     {
-      title: "Data Science Research Assistant",
-      organization: "UCSD Machine Learning Lab",
+      title: "Artificial Intelligence Intern",
+      organization: "smartQED",
+      period: "Jun 2025 - Present",
+      description: "Fine-tuned a diagnostic LLM on 200+ complex technical reports, significantly improving the model’s reasoning capability and reducing root cause resolution time by 40% across product support cases.",
+      description2: "Integrated an AI analytics agent with remote SQLite database via Model Context Protocol, enabling real-time analysis pipelines and showcasing next-gen automation frameworks to senior leadership.",
+      description3: "Constructed a high-fidelity dataset for LLM training by sourcing, cleaning, and structuring over 2GB of raw aviation incident data to support high-accuracy safety prediction models."
+    },
+    {
+      title: "Economics Lab Research Assistant",
+      organization: "UC San Diego Economics Department",
+      period: "Jan 2024 - Jul 2025",
+      description: "Engineered an open source data pipeline using the Library of Congress API to extract over 100,000 entries on historical newspaper coverage of 19th-century presidential campaigns.",
+      description2: "Analyzed relationships between historical newspaper titles by constructing directed graphs and applying connected components analysis to identify and group over 300 related publications.",
+      description3: "Developed Python scripts with API pagination and error recovery logic, ensuring 100% data retrieval completion across multi-page JSON responses and optimizing network efficiency."
+    },
+    {
+      title: "Associate",
+      organization: "Triton Consulting Group",
+      period: "Jan 2024 - Present",
+      description: "Audited client's product analytics platform and built a scalable, client-facing tagging infrastructure with 100+ unique tags across 20 categorized workflows, enabling long-term data flexibility.",
+      description2: "Built a user-friendly web application using Streamlit to visualize and analyze the data, enabling users to explore and interact with the data in real-time.",
+      description3: "Implemented advanced data visualization techniques, including interactive charts and dashboards, to help users gain insights from the data."
+    },
+    {
+      title: "Active Member",
+      organization: "Tau Kappa Epsilon",
       period: "Sep 2023 - Present",
-      description: "Conducting research on deep learning applications in healthcare data analysis",
-    },
-    {
-      title: "Data Analytics Intern",
-      organization: "Local Tech Startup",
-      period: "Jun 2023 - Aug 2023",
-      description: "Developed predictive models for customer behavior and created data visualization dashboards",
-    },
-    {
-      title: "Tutor - Statistics & Python",
-      organization: "UCSD Academic Achievement Hub",
-      period: "Jan 2023 - Present",
-      description: "Tutoring undergraduate students in statistics, probability, and Python programming",
-    },
-    {
-      title: "Vice President",
-      organization: "Data Science Student Organization",
-      period: "Sep 2023 - Present",
-      description: "Leading workshops on machine learning and organizing industry networking events",
+      description: "Built Tau Kappa Epsilon alumni engagement portal using Next.js and React to support donations, networking, and access to chapter history for 1000+ members",
+      description2: "Implemented software development lifecycle practices including conventional commits and code review standards to ensure high code quality.",
     },
   ]
 
@@ -239,17 +233,26 @@ export default function Portfolio() {
               </span>
             </h1>
 
-            {/* Enhanced Typing Text with Better Styling */}
+            {/* Enhanced Typing Text with Typewriter JS */}
             <div className="h-20 md:h-24 flex items-center justify-center mb-8">
               <div className="relative">
-                <p className="text-3xl md:text-4xl text-gray-300 dark:text-gray-300 text-gray-600 font-light">
-                  {currentText}
-                  <span className="animate-pulse text-blue-400 ml-1">|</span>
-                </p>
+                <div className="text-3xl md:text-4xl text-gray-300 dark:text-gray-300 text-gray-600 font-light">
+                  <Typewriter
+                    options={{
+                      strings: messages,
+                      autoStart: true,
+                      loop: true,
+                      deleteSpeed: 40,
+                      delay: 75,
+                      cursor: '|',
+                      cursorClassName: 'animate-pulse text-blue-400 ml-1'
+                    }}
+                  />
+                </div>
               </div>
             </div>
 
-            {/* Quick Stats/Highlights */}
+            {/* Quick Stats */}
             <div className="flex justify-center space-x-8 mb-8 opacity-80">
               <div className="text-center">
                 <div className="text-2xl font-bold text-blue-400">3.9</div>
@@ -265,7 +268,7 @@ export default function Portfolio() {
               </div>
             </div>
 
-            {/* Call to Action Buttons */}
+            {/* Quick Action Buttons */}
             <div className="flex justify-center space-x-4 mb-8">
               <button 
                 onClick={scrollToAbout}
@@ -274,12 +277,12 @@ export default function Portfolio() {
                 Learn More
               </button>
               <a 
-                href="/resume.pdf" 
+                href="/assets/resume.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="px-8 py-3 border border-gray-600 dark:border-gray-600 border-gray-300 text-gray-300 dark:text-gray-300 text-gray-700 rounded-lg hover:border-blue-400 hover:text-blue-400 transition-all duration-300 transform hover:scale-105 font-medium"
               >
-                Download Resume
+                View Resume
               </a>
             </div>
           </div>
@@ -300,12 +303,12 @@ export default function Portfolio() {
           </button>
         </div>
 
-        {/* About Section - VSCode Style with Image */}
+        {/* VSCode Window */}
         <div id="about" className="px-4 pt-20 pb-20">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-light text-white dark:text-white text-gray-900 mb-8 text-center">About Me</h2>
 
-            <div className="grid lg:grid-cols-2 gap-12 items-stretch max-w-5xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-stretch max-w-6xl mx-auto">
               {/* VSCode Style Code Block */}
               <div className="bg-gray-200 dark:bg-gray-800 rounded-lg overflow-hidden max-h-96 ">
                 {/* VSCode Header */}
@@ -362,39 +365,8 @@ export default function Portfolio() {
                     <span className="text-gray-900 dark:text-white">.resume = </span>
                     <span className="text-blue-600 dark:text-blue-400">Resume</span>
                     <span className="text-gray-900 dark:text-white">(</span>
-                    <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-green-600 dark:text-green-400 underline hover:text-green-500 dark:hover:text-green-300">Resume.pdf</a>
+                    <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-green-600 dark:text-green-400 underline hover:text-green-500 dark:hover:text-green-300">Resume.pdf</a>
                     <span className="text-gray-900 dark:text-white">)</span>
-                  </div>
-                  <div className="ml-8">
-                    <span className="text-orange-600 dark:text-orange-400">self</span>
-                    <span className="text-gray-900 dark:text-white">.interests = [</span>
-                  </div>
-                  <div className="ml-12">
-                    <span className="text-green-600 dark:text-green-400">'machine learning'</span>
-                    <span className="text-gray-900 dark:text-white">,</span>
-                  </div>
-                  <div className="ml-12">
-                    <span className="text-green-600 dark:text-green-400">'data visualization'</span>
-                    <span className="text-gray-900 dark:text-white">,</span>
-                  </div>
-                  <div className="ml-12">
-                    <span className="text-green-600 dark:text-green-400">'statistical modeling'</span>
-                    <span className="text-gray-900 dark:text-white">,</span>
-                  </div>
-                  <div className="ml-12">
-                    <span className="text-green-600 dark:text-green-400">'deep learning'</span>
-                    <span className="text-gray-900 dark:text-white">,</span>
-                  </div>
-                  <div className="ml-12">
-                    <span className="text-green-600 dark:text-green-400">'volleyball'</span>
-                    <span className="text-gray-900 dark:text-white">,</span>
-                  </div>
-                  <div className="ml-12">
-                    <span className="text-green-600 dark:text-green-400">'cooking'</span>
-                    <span className="text-gray-900 dark:text-white">,</span>
-                  </div>
-                  <div className="ml-8">
-                    <span className="text-gray-900 dark:text-white">]</span>
                   </div>
                   <div className="ml-8">
                     <span className="text-orange-600 dark:text-orange-400">self</span>
@@ -408,30 +380,69 @@ export default function Portfolio() {
                     <span className="text-green-600 dark:text-green-400">'SQL'</span>
                     <span className="text-gray-900 dark:text-white">, </span>
                     <span className="text-green-600 dark:text-green-400">'Java'</span>
+                    <span className="text-gray-900 dark:text-white">, </span>
+                    <span className="text-green-600 dark:text-green-400">'JavaScript'</span>
                     <span className="text-gray-900 dark:text-white">],</span>
                   </div>
                   <div className="ml-12">
                     <span className="text-green-600 dark:text-green-400">'libraries'</span>
                     <span className="text-gray-900 dark:text-white">: [</span>
-                    <span className="text-green-600 dark:text-green-400">'Pandas'</span>
+                    <span className="text-green-600 dark:text-green-400">'scikit-learn'</span>
                     <span className="text-gray-900 dark:text-white">, </span>
-                    <span className="text-green-600 dark:text-green-400">'NumPy'</span>
+                    <span className="text-green-600 dark:text-green-400">'TensorFlow'</span>
                     <span className="text-gray-900 dark:text-white">, </span>
-                    <span className="text-green-600 dark:text-green-400">'Scikit-learn'</span>
-                    <span className="text-gray-900 dark:text-white">],</span>
+                    <span className="text-green-600 dark:text-green-400">'PyTorch'</span>
+                    <span className="text-gray-900 dark:text-white">, </span>
+                    <span className="text-green-600 dark:text-green-400">'Dask'</span>
+                    <span className="text-gray-900 dark:text-white">]</span>
                   </div>
                   <div className="ml-12">
                     <span className="text-green-600 dark:text-green-400">'tools'</span>
                     <span className="text-gray-900 dark:text-white">: [</span>
-                    <span className="text-green-600 dark:text-green-400">'Jupyter'</span>
-                    <span className="text-gray-900 dark:text-white">, </span>
                     <span className="text-green-600 dark:text-green-400">'Git'</span>
                     <span className="text-gray-900 dark:text-white">, </span>
+                    <span className="text-green-600 dark:text-green-400">'Docker'</span>
+                    <span className="text-gray-900 dark:text-white">, </span>
                     <span className="text-green-600 dark:text-green-400">'Tableau'</span>
+                    <span className="text-gray-900 dark:text-white">, </span>
+                    <span className="text-green-600 dark:text-green-400">'AWS'</span>
+                    <span className="text-gray-900 dark:text-white">, </span>
+                    <span className="text-green-600 dark:text-green-400">'Redis'</span>
                     <span className="text-gray-900 dark:text-white">]</span>
                   </div>
                   <div className="ml-8">
                     <span className="text-gray-900 dark:text-white">&#125;</span>
+                  </div>
+                  <div className="ml-8">
+                    <span className="text-orange-600 dark:text-orange-400">self</span>
+                    <span className="text-gray-900 dark:text-white">.interests = [</span>
+                  </div>
+                  <div className="ml-12">
+                    <span className="text-green-600 dark:text-green-400">'machine learning & AI'</span>
+                    <span className="text-gray-900 dark:text-white">,</span>
+                  </div>
+                  <div className="ml-12">
+                    <span className="text-green-600 dark:text-green-400">'data visualization'</span>
+                    <span className="text-gray-900 dark:text-white">,</span>
+                  </div>
+                  <div className="ml-12">
+                    <span className="text-green-600 dark:text-green-400">'technology'</span>
+                    <span className="text-gray-900 dark:text-white">,</span>
+                  </div>
+                  <div className="ml-12">
+                    <span className="text-green-600 dark:text-green-400">'music & concerts'</span>
+                    <span className="text-gray-900 dark:text-white">,</span>
+                  </div>
+                  <div className="ml-12">
+                    <span className="text-green-600 dark:text-green-400">'lifting'</span>
+                    <span className="text-gray-900 dark:text-white">,</span>
+                  </div>
+                  <div className="ml-12">
+                    <span className="text-green-600 dark:text-green-400">'cooking'</span>
+                    <span className="text-gray-900 dark:text-white">,</span>
+                  </div>
+                  <div className="ml-8">
+                    <span className="text-gray-900 dark:text-white">]</span>
                   </div>
                   <br />
                   <div className="ml-4">
@@ -483,7 +494,7 @@ export default function Portfolio() {
               <div className="flex justify-center lg:justify-start h-full ">
                 <div className="w-full h-full overflow-hidden max-h-96 flex items-center justify-center rounded-lg ">
                   <img
-                    src="/photo.jpeg"
+                    src="/assets/photo.jpeg"
                     alt="Atherv Vidhate"
                     className="h-full w-auto object-contain rounded-lg"
                   />
@@ -534,7 +545,6 @@ export default function Portfolio() {
                   <div>
                     <h4 className="text-lg text-gray-900 dark:text-white mb-4">Relevant Coursework</h4>
                     
-                    {/* Data Science Courses */}
                     <div className="mb-6">
                       <h5 className="text-md font-medium text-blue-400 mb-3">Data Science</h5>
                       <div className="grid md:grid-cols-2 gap-3">
@@ -559,7 +569,6 @@ export default function Portfolio() {
                       </div>
                     </div>
 
-                    {/* Machine Learning & Advanced Courses */}
                     <div className="mb-6">
                       <h5 className="text-md font-medium text-orange-400 mb-3">Machine Learning & Advanced Topics</h5>
                       <div className="grid md:grid-cols-2 gap-3">
@@ -572,7 +581,6 @@ export default function Portfolio() {
                       </div>
                     </div>
 
-                    {/* Math Courses */}
                     <div className="mb-6">
                       <h5 className="text-md font-medium text-purple-400 mb-3">Mathematics</h5>
                       <div className="grid md:grid-cols-2 gap-3">
@@ -591,7 +599,6 @@ export default function Portfolio() {
                       </div>
                     </div>
 
-                    {/* Business Analytics Courses */}
                     <div className="mb-6">
                       <h5 className="text-md font-medium text-green-400 mb-3">Business Analytics</h5>
                       <div className="grid md:grid-cols-2 gap-3">
@@ -604,7 +611,6 @@ export default function Portfolio() {
                       </div>
                     </div>
 
-                    {/* Note about asterisk */}
                     <div className="text-xs text-gray-500 dark:text-gray-400 italic mt-4">
                       * Course currently in progress
                     </div>
@@ -617,12 +623,16 @@ export default function Portfolio() {
                   <h3 className="text-2xl font-medium text-gray-900 dark:text-white mb-6">Experience & Involvement</h3>
 
                   <div className="space-y-6">
-                    {experience.map((item, index) => (
+                    {experience.map((item, index) => (  
                       <div key={index} className="border-l-2 border-blue-600 pl-6">
                         <h4 className="text-lg text-blue-400 mb-1">{item.title}</h4>
                         <p className="text-gray-900 dark:text-white font-medium mb-1">{item.organization}</p>
                         <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">{item.period}</p>
-                        <p className="text-gray-700 dark:text-gray-300 text-sm">{item.description}</p>
+                          <ul className="list-disc list-inside space-y-3">
+                            {item.description && <li className="text-gray-700 dark:text-gray-300 text-sm"> {item.description}</li>}
+                            {item.description2 && <li className="text-gray-700 dark:text-gray-300 text-sm"> {item.description2}</li>}
+                            {item.description3 && <li className="text-gray-700 dark:text-gray-300 text-sm"> {item.description3}</li>}
+                          </ul>
                       </div>
                     ))}
                   </div>
@@ -635,7 +645,7 @@ export default function Portfolio() {
         {/* Projects Section */}
         <div id="projects" className="px-4 py-20">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-light text-gray-900 dark:text-white mb-12 text-center">Data Science Projects</h2>
+            <h2 className="text-3xl font-light text-gray-900 dark:text-white mb-12 text-center">Projects</h2>
 
             <div className="grid md:grid-cols-2 gap-8">
               {projects.map((project, index) => (
@@ -666,18 +676,18 @@ export default function Portfolio() {
                     </div>
 
                     <div className="flex space-x-4">
-                      <a
+                    {project.demo && <a
+                        href={project.demo}
+                        className="text-green-400 hover:text-green-300 text-sm transition-colors duration-300"
+                      >
+                        View Project →
+                      </a> }
+                      {project.github && <a
                         href={project.github}
                         className="text-blue-400 hover:text-blue-300 text-sm transition-colors duration-300"
                       >
                         GitHub →
-                      </a>
-                      <a
-                        href={project.demo}
-                        className="text-green-400 hover:text-green-300 text-sm transition-colors duration-300"
-                      >
-                        Live Demo →
-                      </a>
+                      </a> }
                     </div>
                   </div>
                 </div>
