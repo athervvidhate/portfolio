@@ -82,14 +82,14 @@ export default function Portfolio() {
       tech: ["Python", "FastAPI", "Redis", "Next.js", "Google ADK"],
       github: "https://github.com/athervvidhate/ConcertScoutAI",
       demo: "https://concertscout.app",
-      image: "/assets/concertscout.png",
+      image: "/concertscout.png",
     },
     {
       title: "Power Outage Analysis",
       description: 'Cleaned and engineered features from power outage dataset and used techniques like one-hot encoding, hyperparameter tuning, and cross-validation to build optimized Random Forest models predicting outage severity, achieving a 15% accuracy improvement.',
       tech: ["Python", "scikit-learn", "Hypothesis Testing", "Data Science Lifecycle"],
       demo: "https://atherv.com/poweroutageanalysis",
-      image: "/assets/poweroutages.png",
+      image: "/poweroutages.png",
     },
     {
       title: "Body Sway Research Lab",
@@ -97,14 +97,14 @@ export default function Portfolio() {
       tech: ["JavaScript", "D3.js", "Statistical Analysis"],
       github: "https://github.com/athervvidhate/hipsdontlie",
       demo: "https://athervvidhate.github.io/hipsdontlie/",
-      image: "/assets/bodysway.png",
+      image: "/bodysway.png",
     },
     {
       title: "MiniGit",
       description: "Developed a custom version control system, implementing 10+ Git commands with Hashmaps and serialization for efficient data persistence and version tracking.",
       tech: ["Java", "Version Control", "System Architecture"],
       github: "https://github.com/athervvidhate/MiniGit",
-      image: "/assets/minigit.png",
+      image: "/minigit.png",
     },
   ]
 
@@ -277,7 +277,7 @@ export default function Portfolio() {
                 Learn More
               </button>
               <a 
-                href="/assets/resume.pdf" 
+                                 href="/resume.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="px-8 py-3 border border-gray-600 dark:border-gray-600 border-gray-300 text-gray-300 dark:text-gray-300 text-gray-700 rounded-lg hover:border-blue-400 hover:text-blue-400 transition-all duration-300 transform hover:scale-105 font-medium"
@@ -365,7 +365,7 @@ export default function Portfolio() {
                     <span className="text-gray-900 dark:text-white">.resume = </span>
                     <span className="text-blue-600 dark:text-blue-400">Resume</span>
                     <span className="text-gray-900 dark:text-white">(</span>
-                    <a href="/assets/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-green-600 dark:text-green-400 underline hover:text-green-500 dark:hover:text-green-300">Resume.pdf</a>
+                                         <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-green-600 dark:text-green-400 underline hover:text-green-500 dark:hover:text-green-300">Resume.pdf</a>
                     <span className="text-gray-900 dark:text-white">)</span>
                   </div>
                   <div className="ml-8">
@@ -494,7 +494,7 @@ export default function Portfolio() {
               <div className="flex justify-center lg:justify-start h-full ">
                 <div className="w-full h-full overflow-hidden max-h-96 flex items-center justify-center rounded-lg ">
                   <img
-                    src="/assets/photo.jpeg"
+                                         src="/photo.jpeg"
                     alt="Atherv Vidhate"
                     className="h-full w-auto object-contain rounded-lg"
                   />
