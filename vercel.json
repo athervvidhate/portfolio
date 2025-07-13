@@ -10,11 +10,11 @@
       },
       {
         "source": "/bodyswaylab",
-        "destination": "https://bodysway.vercel.app"
+        "destination": "https://bodysway-9mnxqs1wq-atherv-vs-projects.vercel.app/"
       },
       {
         "source": "/bodyswaylab/:path*",
-        "destination": "https://bodysway.vercel.app/:path*"
+        "destination": "https://bodysway-9mnxqs1wq-atherv-vs-projects.vercel.app//:path*"
       }
     ]
   }
