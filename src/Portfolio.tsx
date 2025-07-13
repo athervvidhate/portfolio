@@ -96,7 +96,7 @@ export default function Portfolio() {
       description: "Developed an interactive data visualization exploring how body sway affects balance and posture, featuring animated scrollytelling elements and real-time statistical analysis through permutation testing to validate research findings.",
       tech: ["JavaScript", "D3.js", "Statistical Analysis"],
       github: "https://github.com/athervvidhate/hipsdontlie",
-      demo: "https://athervvidhate.github.io/hipsdontlie/",
+      demo: "https://atherv.com/bodyswaylab",
       image: "/bodysway.png",
     },
     {

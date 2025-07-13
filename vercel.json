@@ -7,6 +7,14 @@
       {
         "source": "/poweroutageanalysis/:path*",
         "destination": "https://illuminating-the-dark.vercel.app/:path*"
+      },
+      {
+        "source": "/bodyswaylab",
+        "destination": "https://bodysway.vercel.app"
+      },
+      {
+        "source": "/bodyswaylab/:path*",
+        "destination": "https://bodysway.vercel.app/:path*"
       }
     ]
   }
