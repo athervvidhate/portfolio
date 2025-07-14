@@ -152,8 +152,8 @@ export default function Portfolio() {
       organization: "Triton Consulting Group",
       period: "Jan 2024 - Present",
       description: "Audited client's product analytics platform and built a scalable, client-facing tagging infrastructure with 100+ unique tags across 20 categorized workflows, enabling long-term data flexibility.",
-      description2: "Built a user-friendly web application using Streamlit to visualize and analyze the data, enabling users to explore and interact with the data in real-time.",
-      description3: "Implemented advanced data visualization techniques, including interactive charts and dashboards, to help users gain insights from the data."
+      description2: "Initiated and led a targeted outreach campaign that connected with 40+ regional companies, securing new client partnerships and increasing project engagement by over 15%",
+      description3: "Designed and delivered an interactive Tableau dashboard analyzing member demographics, retention patterns, and growth opportunities, driving data-backed engagement initiatives."
     },
     {
       title: "Active Member",
