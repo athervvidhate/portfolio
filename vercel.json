@@ -10,7 +10,7 @@
       },
       {
         "source": "/bodyswaylab",
-        "destination": "https://bodysway.vercel.app/"
+        "destination": "https://bodysway.vercel.app"
       },
       {
         "source": "/bodyswaylab/:path*",
