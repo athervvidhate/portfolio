@@ -31,6 +31,10 @@
       {
         "source": "/favicon.png",
         "destination": "https://bodysway.vercel.app/favicon.png"
+      },
+      {
+        "source": "/data/(.*)",
+        "destination": "https://bodysway.vercel.app/data/$1"
       }
     ]
   }
