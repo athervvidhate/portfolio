@@ -15,6 +15,22 @@
       {
         "source": "/bodyswaylab/(.*)",
         "destination": "https://bodysway.vercel.app/$1"
+      },
+      {
+        "source": "/style.css",
+        "destination": "https://bodysway.vercel.app/style.css"
+      },
+      {
+        "source": "/js/(.*)",
+        "destination": "https://bodysway.vercel.app/js/$1"
+      },
+      {
+        "source": "/assets/(.*)",
+        "destination": "https://bodysway.vercel.app/assets/$1"
+      },
+      {
+        "source": "/favicon.png",
+        "destination": "https://bodysway.vercel.app/favicon.png"
       }
     ]
   }
