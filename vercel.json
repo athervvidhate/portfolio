@@ -13,8 +13,8 @@
         "destination": "https://bodysway.vercel.app"
       },
       {
-        "source": "/bodyswaylab/:path*",
-        "destination": "https://bodysway.vercel.app/:path*"
+        "source": "/bodyswaylab/(.*)",
+        "destination": "https://bodysway.vercel.app/$1"
       }
     ]
   }
