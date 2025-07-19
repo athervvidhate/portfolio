@@ -285,7 +285,7 @@ export default function Portfolio() {
                 Learn More
               </button>
               <a 
-                                 href="/resume.pdf" 
+                                 href="/Atherv_Vidhate_Resume.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="px-8 py-3 border border-gray-600 dark:border-gray-600 border-gray-300 text-gray-300 dark:text-gray-300 text-gray-700 rounded-lg hover:border-blue-400 hover:text-blue-400 transition-all duration-300 transform hover:scale-105 font-medium"
@@ -373,7 +373,7 @@ export default function Portfolio() {
                     <span className="text-gray-900 dark:text-white">.resume = </span>
                     <span className="text-blue-600 dark:text-blue-400">Resume</span>
                     <span className="text-gray-900 dark:text-white">(</span>
-                                         <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-green-600 dark:text-green-400 underline hover:text-green-500 dark:hover:text-green-300">Resume.pdf</a>
+                                         <a href="/Atherv_Vidhate_Resume.pdf" target="_blank" rel="noopener noreferrer" className="text-green-600 dark:text-green-400 underline hover:text-green-500 dark:hover:text-green-300">Resume.pdf</a>
                     <span className="text-gray-900 dark:text-white">)</span>
                   </div>
                   <div className="ml-8">
