@@ -85,6 +85,14 @@ export default function Portfolio() {
       image: "/concertscout.png",
     },
     {
+      title: "Multiple Linear Regression from Scratch",
+      description: "Built a multiple linear regression model from scratch, using gradient descent to optimize the model's parameters and train/test split to evaluate model performance. Deployed on Streamlit to allow users to learn about MLR and input their own data and see the model's predictions.",
+      tech: ["Python", "NumPy", "Pandas", "Linear Algebra", "Streamlit"],
+      github: "https://github.com/athervvidhate/linear-regression",
+      demo: "https://athervvidhate-linear-regression.streamlit.app/",
+      image: "/linreg.png",
+    },
+    {
       title: "Power Outage Analysis",
       description: 'Cleaned and engineered features from power outage dataset and used techniques like one-hot encoding, hyperparameter tuning, and cross-validation to build optimized Random Forest models predicting outage severity, achieving a 15% accuracy improvement.',
       tech: ["Python", "scikit-learn", "Hypothesis Testing", "Data Science Lifecycle"],
@@ -651,7 +659,7 @@ export default function Portfolio() {
               {projects.map((project, index) => (
                 <div
                   key={index}
-                  className="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden hover:bg-gray-200 dark:hover:bg-gray-750 transition-colors duration-300"
+                  className={`bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden hover:bg-gray-200 dark:hover:bg-gray-750 transition-colors duration-300 ${projects.length % 2 === 1 && index === projects.length - 1 ? 'md:col-span-2 md:max-w-lg md:mx-auto' : ''}`}
                 >
                   {/* Project Image Header */}
                   <div className="h-48 bg-gray-200 dark:bg-gray-700 overflow-hidden">
