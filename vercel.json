@@ -36,5 +36,12 @@
         "source": "/data/(.*)",
         "destination": "https://bodysway.vercel.app/data/$1"
       }
+    ],
+    "redirects": [
+      {
+        "source": "/linreg",
+        "destination": "https://athervvidhate-linear-regression.streamlit.app/",
+        "permanent": false
+      }
     ]
   }

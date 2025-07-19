@@ -89,7 +89,7 @@ export default function Portfolio() {
       description: "Built a multiple linear regression model from scratch, using gradient descent to optimize the model's parameters and train/test split to evaluate model performance. Deployed on Streamlit to allow users to learn about MLR and input their own data and see the model's predictions.",
       tech: ["Python", "NumPy", "Pandas", "Linear Algebra", "Streamlit"],
       github: "https://github.com/athervvidhate/linear-regression",
-      demo: "https://athervvidhate-linear-regression.streamlit.app/",
+      demo: "https://atherv.com/linreg",
       image: "/linreg.png",
     },
     {
