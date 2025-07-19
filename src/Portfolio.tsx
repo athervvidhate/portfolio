@@ -267,7 +267,7 @@ export default function Portfolio() {
                 <div className="text-sm text-gray-400 dark:text-gray-400 text-gray-600">GPA</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-purple-400">4+</div>
+                <div className="text-2xl font-bold text-purple-400">5+</div>
                 <div className="text-sm text-gray-400 dark:text-gray-400 text-gray-600">Projects</div>
               </div>
               <div className="text-center">
