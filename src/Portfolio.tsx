@@ -140,7 +140,7 @@ export default function Portfolio() {
 
   const experience = [
     {
-      title: "Artificial Intelligence Intern",
+      title: "Software Engineer Intern",
       organization: "smartQED",
       period: "Jun 2025 - Present",
       description: "Fine-tuned a diagnostic LLM on 200+ complex technical reports, significantly improving the model’s reasoning capability and reducing root cause resolution time by 40% across product support cases.",
