@@ -77,6 +77,15 @@ export default function Portfolio() {
 
   const projects = [
     {
+      title: 'Fitness Program Recommendation System',
+      description: 'Built and deployed a web app that recommends full workout programs from a 600k+ row dataset of user generated workouts using fine‑tuned ALBERT/RoBERTa sentence embeddings, cosine similarity, and K‑Means clustering. Dockerized for easy deployment and deployed on GCP.',
+      tech: ['Python', 'Docker', 'GCP', 'Transformers', 'scikit-learn', 'Streamlit'],
+      github: 'https://github.com/athervvidhate/liftingML',
+      demo: 'https://www.workout.atherv.com',
+      walkthrough: 'https://workout-walkthrough.atherv.com',
+      image: '/lifting.png',
+    },
+    {
       title: "Concert Scout AI",
       description: "Designed and launched an AI-powered concert recommendation platform for 150+ users, building a multi-agent system to deliver personalized suggestions and deploying scalable infrastructure with user session management and analytics tracking.",
       tech: ["Python", "FastAPI", "Redis", "Next.js", "Google ADK"],
@@ -689,6 +698,12 @@ export default function Portfolio() {
                         className="text-green-400 hover:text-green-300 text-sm transition-colors duration-300"
                       >
                         View Project →
+                      </a> }
+                      {project.walkthrough && <a
+                        href={project.walkthrough}
+                        className="text-red-400 hover:text-green-300 text-sm transition-colors duration-300"
+                      >
+                        Walkthrough →
                       </a> }
                       {project.github && <a
                         href={project.github}
