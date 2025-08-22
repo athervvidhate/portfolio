@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
 import Typewriter from 'typewriter-effect'
 
 export default function Portfolio() {
@@ -185,17 +185,17 @@ export default function Portfolio() {
     <>
       {/* Sticky Header that appears after scrolling past hero */}
       <div
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${showHeader ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8 pointer-events-none'} bg-gray-900/80 dark:bg-gray-900/80 bg-white/80 backdrop-blur border-b border-purple-200/30 dark:border-purple-200/30 border-gray-200/30`}
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${showHeader ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-8 pointer-events-none'} bg-white/70 dark:bg-neutral-900/80 backdrop-blur border-b border-neutral-200/30 dark:border-neutral-800/40`}
       >
         <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
-          <span className="text-lg font-semibold text-blue-400 tracking-wide">Atherv Vidhate</span>
+          <span className="text-lg font-semibold bg-gradient-to-r from-amber-400 via-orange-400 to-rose-400 bg-clip-text text-transparent tracking-wide">Atherv Vidhate</span>
           <nav className="flex items-center space-x-3 sm:space-x-6">
-            <a href="#about" className="text-gray-200 dark:text-gray-200 text-gray-700 hover:text-blue-400 dark:hover:text-blue-400 transition-colors duration-200 text-xs sm:text-sm font-medium">About Me</a>
-            <a href="#education" className="text-gray-200 dark:text-gray-200 text-gray-700 hover:text-blue-400 dark:hover:text-blue-400 transition-colors duration-200 text-xs sm:text-sm font-medium">Education & Experience</a>
-            <a href="#projects" className="text-gray-200 dark:text-gray-200 text-gray-700 hover:text-blue-400 dark:hover:text-blue-400 transition-colors duration-200 text-xs sm:text-sm font-medium">Projects</a>
+            <a href="#about" className="text-gray-700 dark:text-neutral-200 hover:text-amber-500 dark:hover:text-amber-400 transition-colors duration-200 text-xs sm:text-sm font-medium">About Me</a>
+            <a href="#education" className="text-gray-700 dark:text-neutral-200 hover:text-amber-500 dark:hover:text-amber-400 transition-colors duration-200 text-xs sm:text-sm font-medium">Education & Experience</a>
+            <a href="#projects" className="text-gray-700 dark:text-neutral-200 hover:text-amber-500 dark:hover:text-amber-400 transition-colors duration-200 text-xs sm:text-sm font-medium">Projects</a>
             <button
               onClick={toggleTheme}
-              className="p-1.5 sm:p-2 rounded-lg bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors duration-200"
+              className="p-1.5 sm:p-2 rounded-lg bg-neutral-200 dark:bg-neutral-700 hover:bg-neutral-300 dark:hover:bg-neutral-600 transition-colors duration-200"
               aria-label="Toggle theme"
             >
               {isDarkMode ? (
@@ -211,28 +211,28 @@ export default function Portfolio() {
           </nav>
         </div>
       </div>
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      <div className="min-h-screen bg-neutral-50 dark:bg-neutral-900 bg-grid">
         {/* Enhanced Full Screen Hero Section */}
         <div className="h-screen flex flex-col items-center justify-center px-4 relative overflow-hidden">
           {/* Animated Background Elements */}
           <div className="absolute inset-0 overflow-hidden">
             {/* Floating Data Points */}
-            <div className="absolute top-20 left-10 w-2 h-2 bg-blue-400 rounded-full animate-pulse opacity-60"></div>
-            <div className="absolute top-40 right-20 w-3 h-3 bg-purple-400 rounded-full animate-bounce opacity-40"></div>
-            <div className="absolute bottom-40 left-20 w-1 h-1 bg-green-400 rounded-full animate-ping opacity-80"></div>
-            <div className="absolute top-60 left-1/4 w-2 h-2 bg-yellow-400 rounded-full animate-pulse opacity-50"></div>
-            <div className="absolute bottom-60 right-1/3 w-1 h-1 bg-red-400 rounded-full animate-bounce opacity-70"></div>
+            <div className="absolute top-20 left-10 w-2 h-2 bg-amber-400 rounded-full animate-pulse opacity-60"></div>
+            <div className="absolute top-40 right-20 w-3 h-3 bg-orange-400 rounded-full animate-bounce opacity-40"></div>
+            <div className="absolute bottom-40 left-20 w-1 h-1 bg-rose-400 rounded-full animate-ping opacity-80"></div>
+            <div className="absolute top-60 left-1/4 w-2 h-2 bg-amber-300 rounded-full animate-pulse opacity-50"></div>
+            <div className="absolute bottom-60 right-1/3 w-1 h-1 bg-orange-300 rounded-full animate-bounce opacity-70"></div>
             
 
 
             {/* Floating Code Elements */}
-            <div className="absolute top-32 right-32 text-xs text-gray-700 dark:text-gray-600 font-mono opacity-40 animate-float">
+            <div className="absolute top-32 right-32 text-xs text-gray-700 dark:text-neutral-600 font-mono opacity-40 animate-float">
               <span className="text-blue-600 dark:text-blue-400">def</span> <span className="text-yellow-600 dark:text-yellow-300">analyze_data</span>()
             </div>
-            <div className="absolute bottom-32 left-32 text-xs text-gray-700 dark:text-gray-600 font-mono opacity-40 animate-float" style={{animationDelay: '2s'}}>
+            <div className="absolute bottom-32 left-32 text-xs text-gray-700 dark:text-neutral-600 font-mono opacity-40 animate-float" style={{animationDelay: '2s'}}>
               <span className="text-green-600 dark:text-green-400">return</span> <span className="text-purple-600 dark:text-purple-400">insights</span>
             </div>
-            <div className="absolute top-1/2 left-16 text-xs text-gray-700 dark:text-gray-600 font-mono opacity-40 animate-float" style={{animationDelay: '4s'}}>
+            <div className="absolute top-1/2 left-16 text-xs text-gray-700 dark:text-neutral-600 font-mono opacity-40 animate-float" style={{animationDelay: '4s'}}>
               <span className="text-blue-600 dark:text-blue-400">import</span> <span className="text-yellow-600 dark:text-yellow-300">pandas</span>
             </div>
           </div>
@@ -240,12 +240,12 @@ export default function Portfolio() {
           {/* Main Content */}
           <div className="text-center max-w-4xl mx-auto relative z-10">
             {/* Enhanced Title with Gradient */}
-            <h1 className="text-6xl md:text-8xl font-light mb-8">
-              <span className="text-blue-400">
+            <h1 className="text-6xl md:text-8xl font-light mb-8 tracking-tight">
+              <span className="text-gray-900 dark:text-white">
                 Hello, I'm
               </span>
               <br />
-              <span className="font-medium text-gray-900 dark:text-white">
+              <span className="font-semibold bg-gradient-to-r from-amber-400 via-orange-400 to-rose-400 bg-clip-text text-transparent">
                 Atherv
               </span>
             </h1>
@@ -253,7 +253,7 @@ export default function Portfolio() {
             {/* Enhanced Typing Text with Typewriter JS */}
             <div className="h-20 md:h-24 flex items-center justify-center mb-8">
               <div className="relative">
-                <div className="text-3xl md:text-4xl text-gray-300 dark:text-gray-300 text-gray-600 font-light">
+                <div className="text-3xl md:text-4xl text-gray-600 dark:text-neutral-300 font-light">
                   <Typewriter
                     options={{
                       strings: messages,
@@ -262,7 +262,7 @@ export default function Portfolio() {
                       deleteSpeed: 40,
                       delay: 75,
                       cursor: '|',
-                      cursorClassName: 'animate-pulse text-blue-400 ml-1'
+                      cursorClassName: 'animate-pulse text-amber-500 ml-1'
                     }}
                   />
                 </div>
@@ -270,18 +270,18 @@ export default function Portfolio() {
             </div>
 
             {/* Quick Stats */}
-            <div className="flex justify-center space-x-8 mb-8 opacity-80">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-blue-400">3.9</div>
-                <div className="text-sm text-gray-400 dark:text-gray-400 text-gray-600">GPA</div>
+            <div className="flex justify-center space-x-4 sm:space-x-8 mb-8">
+              <div className="text-center rounded-lg px-4 py-3 bg-white/60 dark:bg-white/5 border border-neutral-200/60 dark:border-white/10 backdrop-blur-md shadow-sm">
+                <div className="text-2xl font-bold text-amber-500">3.9</div>
+                <div className="text-xs uppercase tracking-wide text-gray-600 dark:text-gray-400">GPA</div>
               </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-purple-400">5+</div>
-                <div className="text-sm text-gray-400 dark:text-gray-400 text-gray-600">Projects</div>
+              <div className="text-center rounded-lg px-4 py-3 bg-white/60 dark:bg-white/5 border border-neutral-200/60 dark:border-white/10 backdrop-blur-md shadow-sm">
+                <div className="text-2xl font-bold text-orange-500">6+</div>
+                <div className="text-xs uppercase tracking-wide text-gray-600 dark:text-gray-400">Projects</div>
               </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-green-400">3</div>
-                <div className="text-sm text-gray-400 dark:text-gray-400 text-gray-600">Years</div>
+              <div className="text-center rounded-lg px-4 py-3 bg-white/60 dark:bg-white/5 border border-neutral-200/60 dark:border-white/10 backdrop-blur-md shadow-sm">
+                <div className="text-2xl font-bold text-rose-500">3</div>
+                <div className="text-xs uppercase tracking-wide text-gray-600 dark:text-gray-400">Years</div>
               </div>
             </div>
 
@@ -289,7 +289,7 @@ export default function Portfolio() {
             <div className="flex justify-center space-x-4 mb-8">
               <button 
                 onClick={scrollToAbout}
-                className="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 font-medium"
+                className="px-8 py-3 bg-gradient-to-r from-amber-600 to-rose-600 text-white rounded-lg shadow-lg shadow-amber-500/20 hover:shadow-rose-500/20 transition-all duration-300 transform hover:-translate-y-0.5 font-medium"
               >
                 Learn More
               </button>
@@ -297,7 +297,7 @@ export default function Portfolio() {
                                  href="/Atherv_Vidhate_Resume.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="px-8 py-3 border border-gray-600 dark:border-gray-600 border-gray-300 text-gray-300 dark:text-gray-300 text-gray-700 rounded-lg hover:border-blue-400 hover:text-blue-400 transition-all duration-300 transform hover:scale-105 font-medium"
+                className="px-8 py-3 rounded-lg text-gray-700 dark:text-neutral-200 ring-1 ring-neutral-300 dark:ring-white/10 hover:ring-amber-400 hover:text-amber-500 dark:hover:text-amber-400 transition-all duration-300 transform hover:-translate-y-0.5 font-medium"
               >
                 View Resume
               </a>
@@ -307,7 +307,7 @@ export default function Portfolio() {
           {/* Enhanced Bouncing Arrow */}
           <button
             onClick={scrollToAbout}
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white dark:text-white text-gray-900 hover:text-blue-400 transition-colors duration-300"
+            className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-900 dark:text-white hover:text-amber-500 transition-colors duration-300"
             aria-label="Scroll to about section"
           >
             <div className="animate-bounce">
@@ -323,13 +323,14 @@ export default function Portfolio() {
         {/* VSCode Window */}
         <div id="about" className="px-4 pt-20 pb-20">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl font-light text-white dark:text-white text-gray-900 mb-8 text-center">About Me</h2>
+            <h2 className="text-3xl font-light text-gray-900 dark:text-white mb-4 text-center">About Me</h2>
+            <div className="h-1 w-16 mx-auto bg-gradient-to-r from-amber-400 via-orange-400 to-rose-400 rounded-full mb-8"></div>
 
             <div className="grid lg:grid-cols-2 gap-12 items-stretch max-w-6xl mx-auto">
               {/* VSCode Style Code Block */}
-              <div className="bg-gray-200 dark:bg-gray-800 rounded-lg overflow-hidden max-h-96 ">
+              <div className="bg-neutral-200 dark:bg-neutral-800 rounded-lg overflow-hidden max-h-96 ">
                 {/* VSCode Header */}
-                <div className="bg-gray-300 dark:bg-gray-700 px-4 py-2 flex items-center space-x-2">
+                <div className="bg-neutral-300 dark:bg-neutral-700 px-4 py-2 flex items-center space-x-2">
                   <div className="flex space-x-2">
                     <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                     <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
@@ -509,11 +510,12 @@ export default function Portfolio() {
 
               {/* Profile Image */}
               <div className="flex justify-center lg:justify-start h-full ">
-                <div className="w-full h-full overflow-hidden max-h-96 flex items-center justify-center rounded-lg ">
+                <div className="w-full h-full overflow-hidden max-h-96 flex items-center justify-center rounded-lg relative ">
                   <img
                                          src="/photo.jpeg"
                     alt="Atherv Vidhate"
                     className="h-full w-auto object-contain rounded-lg"
+                    loading="lazy" decoding="async"
                   />
                 </div>
               </div>
@@ -526,11 +528,11 @@ export default function Portfolio() {
           <div className="max-w-4xl mx-auto">
             {/* Tab Navigation */}
             <div className="flex justify-center mb-8">
-              <div className="bg-gray-200 dark:bg-gray-800 rounded-lg p-1 flex flex-col sm:flex-row">
+              <div className="bg-neutral-200 dark:bg-neutral-800 rounded-lg p-1 flex flex-col sm:flex-row ring-1 ring-neutral-300 dark:ring-white/10">
                 <button
                   onClick={() => setActiveTab("education")}
                   className={`px-4 sm:px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 whitespace-nowrap ${
-                    activeTab === "education" ? "bg-blue-600 text-white" : "text-gray-300 dark:text-gray-300 text-gray-600 hover:text-white dark:hover:text-white hover:text-gray-900"
+                    activeTab === "education" ? "bg-gradient-to-r from-amber-600 to-rose-600 text-white" : "text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
                   }`}
                 >
                   Education & Coursework
@@ -538,7 +540,7 @@ export default function Portfolio() {
                 <button
                   onClick={() => setActiveTab("experience")}
                   className={`px-4 sm:px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 whitespace-nowrap ${
-                    activeTab === "experience" ? "bg-blue-600 text-white" : "text-gray-300 dark:text-gray-300 text-gray-600 hover:text-white dark:hover:text-white hover:text-gray-900"
+                    activeTab === "experience" ? "bg-gradient-to-r from-amber-600 to-rose-600 text-white" : "text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
                   }`}
                 >
                   Experience & Involvement
@@ -547,82 +549,82 @@ export default function Portfolio() {
             </div>
 
             {/* Tab Content */}
-            <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-8">
+            <div className="bg-neutral-100 dark:bg-neutral-800 rounded-lg p-8 ring-1 ring-neutral-200 dark:ring-white/10">
               {activeTab === "education" && (
                 <div>
                   <h3 className="text-2xl font-medium text-gray-900 dark:text-white mb-6">Education & Coursework</h3>
 
                   <div className="mb-8">
-                    <h4 className="text-xl text-blue-400 mb-2">{education.degree}</h4>
-                    <p className="text-gray-300 dark:text-gray-300 text-gray-700 mb-1">{education.school}</p>
-                    <p className="text-gray-400 dark:text-gray-400 text-gray-600 text-sm mb-1">Expected Graduation: {education.expectedGrad}</p>
-                    <p className="text-gray-400 dark:text-gray-400 text-gray-600 text-sm">GPA: {education.gpa}</p>
+                    <h4 className="text-xl text-amber-500 mb-2">{education.degree}</h4>
+                    <p className="text-gray-700 dark:text-gray-300 mb-1">{education.school}</p>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm mb-1">Expected Graduation: {education.expectedGrad}</p>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm">GPA: {education.gpa}</p>
                   </div>
 
                   <div>
                     <h4 className="text-lg text-gray-900 dark:text-white mb-4">Relevant Coursework</h4>
                     
                     <div className="mb-6">
-                      <h5 className="text-md font-medium text-blue-400 mb-3">Data Science</h5>
+                      <h5 className="text-md font-medium text-amber-500 mb-3">Data Science</h5>
                       <div className="grid md:grid-cols-2 gap-3">
-                      <div className="bg-gray-200 dark:bg-gray-700 rounded-md p-3">
+                      <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
                           <span className="text-gray-700 dark:text-gray-300 text-sm">Systems for Scalable Analytics (DSC 102)</span>
                         </div>
-                        <div className="bg-gray-200 dark:bg-gray-700 rounded-md p-3">
+                        <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
                           <span className="text-gray-700 dark:text-gray-300 text-sm">Practice of Data Science (DSC 80)</span>
                         </div>
-                        <div className="bg-gray-200 dark:bg-gray-700 rounded-md p-3">
+                        <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
                           <span className="text-gray-700 dark:text-gray-300 text-sm">Theoretical Foundations of Data Science (DSC 40A/40B)</span>
                         </div>
-                        <div className="bg-gray-200 dark:bg-gray-700 rounded-md p-3">
+                        <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
                           <span className="text-gray-700 dark:text-gray-300 text-sm">Data Structures and Algorithms (DSC 30)</span>
                         </div>
-                        <div className="bg-gray-200 dark:bg-gray-700 rounded-md p-3">
+                        <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
                           <span className="text-gray-700 dark:text-gray-300 text-sm">Principles of Data Science (DSC 20)</span>
                         </div>
-                        <div className="bg-gray-200 dark:bg-gray-700 rounded-md p-3">
+                        <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
                           <span className="text-gray-700 dark:text-gray-300 text-sm">Introduction to Data Science (DSC 10)</span>
                         </div>
                       </div>
                     </div>
 
                     <div className="mb-6">
-                      <h5 className="text-md font-medium text-orange-400 mb-3">Machine Learning & Advanced Topics</h5>
+                      <h5 className="text-md font-medium text-orange-500 mb-3">Machine Learning & Advanced Topics</h5>
                       <div className="grid md:grid-cols-2 gap-3">
-                        <div className="bg-gray-200 dark:bg-gray-700 rounded-md p-3">
+                        <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
                           <span className="text-gray-700 dark:text-gray-300 text-sm">Probabilistic Modeling & Machine Learning (DSC 140A)*</span>
                         </div>
-                        <div className="bg-gray-200 dark:bg-gray-700 rounded-md p-3">
+                        <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
                           <span className="text-gray-700 dark:text-gray-300 text-sm">Recommender Systems & Web Mining (CSE 158)*</span>
                         </div>
                       </div>
                     </div>
 
                     <div className="mb-6">
-                      <h5 className="text-md font-medium text-purple-400 mb-3">Mathematics</h5>
+                      <h5 className="text-md font-medium text-rose-500 mb-3">Mathematics</h5>
                       <div className="grid md:grid-cols-2 gap-3">
-                        <div className="bg-gray-200 dark:bg-gray-700 rounded-md p-3">
+                        <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
                           <span className="text-gray-700 dark:text-gray-300 text-sm">Probability and Statistics (MATH 183)</span>
                         </div>
-                        <div className="bg-gray-200 dark:bg-gray-700 rounded-md p-3">
+                        <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
                           <span className="text-gray-700 dark:text-gray-300 text-sm">Introduction to Probability (MATH 180A)</span>
                         </div>
-                        <div className="bg-gray-200 dark:bg-gray-700 rounded-md p-3">
+                        <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
                           <span className="text-gray-700 dark:text-gray-300 text-sm">Linear Algebra (MATH 18)</span>
                         </div>
-                        <div className="bg-gray-200 dark:bg-gray-700 rounded-md p-3">
+                        <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
                           <span className="text-gray-700 dark:text-gray-300 text-sm">Calculus (MATH 20C)</span>
                         </div>
                       </div>
                     </div>
 
                     <div className="mb-6">
-                      <h5 className="text-md font-medium text-green-400 mb-3">Business Analytics</h5>
+                      <h5 className="text-md font-medium text-amber-600 mb-3">Business Analytics</h5>
                       <div className="grid md:grid-cols-2 gap-3">
-                        <div className="bg-gray-200 dark:bg-gray-700 rounded-md p-3">
+                        <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
                           <span className="text-gray-700 dark:text-gray-300 text-sm">Information Technology - Business Analytics (MGT 153)*</span>
                         </div>
-                        <div className="bg-gray-200 dark:bg-gray-700 rounded-md p-3">
+                        <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
                           <span className="text-gray-700 dark:text-gray-300 text-sm">Business Analytics (MGT 151)*</span>
                         </div>
                       </div>
@@ -641,8 +643,8 @@ export default function Portfolio() {
 
                   <div className="space-y-6">
                     {experience.map((item, index) => (  
-                      <div key={index} className="border-l-2 border-blue-600 pl-6">
-                        <h4 className="text-lg text-blue-400 mb-1">{item.title}</h4>
+                      <div key={index} className="border-l-2 border-amber-600 pl-6">
+                        <h4 className="text-lg text-amber-500 mb-1">{item.title}</h4>
                         <p className="text-gray-900 dark:text-white font-medium mb-1">{item.organization}</p>
                         <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">{item.period}</p>
                           <ul className="list-disc list-inside space-y-3">
@@ -668,14 +670,16 @@ export default function Portfolio() {
               {projects.map((project, index) => (
                 <div
                   key={index}
-                  className={`bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden hover:bg-gray-200 dark:hover:bg-gray-750 transition-colors duration-300 ${projects.length % 2 === 1 && index === projects.length - 1 ? 'md:col-span-2 md:max-w-lg md:mx-auto' : ''}`}
+                  className={`group bg-neutral-100 dark:bg-neutral-800 rounded-xl overflow-hidden transition-all duration-300 shadow-sm hover:shadow-lg hover:-translate-y-1 ring-1 ring-neutral-200/60 dark:ring-white/10 ${projects.length % 2 === 1 && index === projects.length - 1 ? 'md:col-span-2 md:max-w-lg md:mx-auto' : ''}`}
                 >
                   {/* Project Image Header */}
-                  <div className="h-48 bg-gray-200 dark:bg-gray-700 overflow-hidden">
+                  <div className="relative h-48 bg-neutral-200 dark:bg-neutral-700 overflow-hidden">
+                    <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-amber-400 via-orange-400 to-rose-400"></div>
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy" decoding="async"
                     />
                   </div>
 
@@ -686,7 +690,7 @@ export default function Portfolio() {
 
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.tech.map((tech, techIndex) => (
-                        <span key={techIndex} className="px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs rounded">
+                        <span key={techIndex} className="px-2 py-1 bg-neutral-200 dark:bg-neutral-700 text-gray-700 dark:text-gray-300 text-xs rounded">
                           {tech}
                         </span>
                       ))}
@@ -707,7 +711,7 @@ export default function Portfolio() {
                       </a> }
                       {project.github && <a
                         href={project.github}
-                        className="text-blue-400 hover:text-blue-300 text-sm transition-colors duration-300"
+                        className="text-amber-500 hover:text-amber-400 text-sm transition-colors duration-300"
                       >
                         GitHub →
                       </a> }
@@ -720,12 +724,12 @@ export default function Portfolio() {
         </div>
 
         {/* Footer with Social Icons */}
-        <footer className="px-4 py-12 border-t border-gray-800 dark:border-gray-800 border-gray-200">
+        <footer className="px-4 py-12 border-t border-neutral-200 dark:border-neutral-800">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center space-x-6 mb-6">
               <a
                 href="https://github.com/athervvidhate"
-                className="w-12 h-12 border border-gray-600 dark:border-gray-600 border-gray-300 rounded-full flex items-center justify-center hover:border-white dark:hover:border-white hover:border-gray-900 hover:text-white dark:hover:text-white hover:text-gray-900 transition-colors duration-300 text-gray-400 dark:text-gray-400 text-gray-600"
+                className="w-12 h-12 border border-neutral-300 dark:border-neutral-600 rounded-full flex items-center justify-center hover:border-gray-900 dark:hover:border-white hover:text-gray-900 dark:hover:text-white transition-colors duration-300 text-gray-600 dark:text-gray-400"
               >
                 <span className="sr-only">GitHub</span>
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -734,7 +738,7 @@ export default function Portfolio() {
               </a>
               <a
                 href="https://linkedin.com/in/athervvidhate"
-                className="w-12 h-12 border border-gray-600 dark:border-gray-600 border-gray-300 rounded-full flex items-center justify-center hover:border-white dark:hover:border-white hover:border-gray-900 hover:text-white dark:hover:text-white hover:text-gray-900 transition-colors duration-300 text-gray-400 dark:text-gray-400 text-gray-600"
+                className="w-12 h-12 border border-neutral-300 dark:border-neutral-600 rounded-full flex items-center justify-center hover:border-gray-900 dark:hover:border-white hover:text-gray-900 dark:hover:text-white transition-colors duration-300 text-gray-600 dark:text-gray-400"
               >
                 <span className="sr-only">LinkedIn</span>
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -743,7 +747,7 @@ export default function Portfolio() {
               </a>
               <a
                 href="mailto:athervvidhate@gmail.com"
-                className="w-12 h-12 border border-gray-600 dark:border-gray-600 border-gray-300 rounded-full flex items-center justify-center hover:border-white dark:hover:border-white hover:border-gray-900 hover:text-white dark:hover:text-white hover:text-gray-900 transition-colors duration-300 text-gray-400 dark:text-gray-400 text-gray-600"
+                className="w-12 h-12 border border-neutral-300 dark:border-neutral-600 rounded-full flex items-center justify-center hover:border-gray-900 dark:hover:border-white hover:text-gray-900 dark:hover:text-white transition-colors duration-300 text-gray-600 dark:text-gray-400"
               >
                 <span className="sr-only">Email</span>
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
