@@ -31,7 +31,7 @@ export default function Portfolio() {
   ]
 
 
-  const [activeTab, setActiveTab] = useState("education")
+  const [activeTab, setActiveTab] = useState("experience")
   const [showHeader, setShowHeader] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(true);
 
@@ -149,17 +149,25 @@ export default function Portfolio() {
 
   const experience = [
     {
+      title: "Full-Stack Developer Intern",
+      organization: "Nexa Tax",
+      period: "Aug 2025 - Present",
+      description: "Delivered 95% structured data extraction accuracy in production-grade AI tax processing system with 100+ PDF documents processed through RAG pipeline, achieving structured data extraction from financial documents with 23 categories",
+      description2: "Optimized computer vision pipeline achieving 60% reduction in processing time through YOLO object detection and multimodal LLM architecture for receipt/income document processing, with 100% uptime for 1000+ concurrent users.",
+      description3: "Engineered scalable Flask REST API with LangChain and LangGraph state management, implementing 8+ endpoints for chatbot interaction and conversation history tracking with Postgres persistence and user session management."
+    },
+    {
       title: "Software Engineer Intern",
       organization: "smartQED",
-      period: "Jun 2025 - Present",
-      description: "Fine-tuned a diagnostic LLM on 200+ complex technical reports, significantly improving the model’s reasoning capability and reducing root cause resolution time by 40% across product support cases.",
+      period: "Apr 2025 - Aug 2025",
+      description: "Fine-tuned a diagnostic LLM on 200+ complex technical reports, significantly improving the model's reasoning capability and reducing root cause resolution time by 40% across product support cases.",
       description2: "Integrated an AI analytics agent with remote SQLite database via Model Context Protocol, enabling real-time analysis pipelines and showcasing next-gen automation frameworks to senior leadership.",
       description3: "Constructed a high-fidelity dataset for LLM training by sourcing, cleaning, and structuring over 2GB of raw aviation incident data to support high-accuracy safety prediction models."
     },
     {
       title: "Economics Lab Research Assistant",
       organization: "UC San Diego Economics Department",
-      period: "Jan 2024 - Jul 2025",
+      period: "Apr 2025 - Aug 2025",
       description: "Engineered an open source data pipeline using the Library of Congress API to extract over 100,000 entries on historical newspaper coverage of 19th-century presidential campaigns.",
       description2: "Analyzed relationships between historical newspaper titles by constructing directed graphs and applying connected components analysis to identify and group over 300 related publications.",
       description3: "Developed Python scripts with API pagination and error recovery logic, ensuring 100% data retrieval completion across multi-page JSON responses and optimizing network efficiency."
@@ -175,7 +183,7 @@ export default function Portfolio() {
     {
       title: "Active Member",
       organization: "Tau Kappa Epsilon",
-      period: "Sep 2023 - Present",
+      period: "Sep 2024 - Present",
       description: "Built Tau Kappa Epsilon alumni engagement portal using Next.js and React to support donations, networking, and access to chapter history for 1000+ members",
       description2: "Implemented software development lifecycle practices including conventional commits and code review standards to ensure high code quality.",
     },
@@ -530,20 +538,20 @@ export default function Portfolio() {
             <div className="flex justify-center mb-8">
               <div className="bg-neutral-200 dark:bg-neutral-800 rounded-lg p-1 flex flex-col sm:flex-row ring-1 ring-neutral-300 dark:ring-white/10">
                 <button
-                  onClick={() => setActiveTab("education")}
-                  className={`px-4 sm:px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 whitespace-nowrap ${
-                    activeTab === "education" ? "bg-gradient-to-r from-amber-600 to-rose-600 text-white" : "text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-                  }`}
-                >
-                  Education & Coursework
-                </button>
-                <button
                   onClick={() => setActiveTab("experience")}
                   className={`px-4 sm:px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 whitespace-nowrap ${
                     activeTab === "experience" ? "bg-gradient-to-r from-amber-600 to-rose-600 text-white" : "text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
                   }`}
                 >
                   Experience & Involvement
+                </button>
+                <button
+                  onClick={() => setActiveTab("education")}
+                  className={`px-4 sm:px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 whitespace-nowrap ${
+                    activeTab === "education" ? "bg-gradient-to-r from-amber-600 to-rose-600 text-white" : "text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+                  }`}
+                >
+                  Education & Coursework
                 </button>
               </div>
             </div>
