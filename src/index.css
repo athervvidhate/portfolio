@@ -40,6 +40,45 @@ code {
   animation: float 6s ease-in-out infinite;
 } 
 
+@keyframes drift {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(16px, -18px, 0) scale(1.05);
+  }
+}
+
+@keyframes drift-reverse {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-14px, 14px, 0) scale(0.95);
+  }
+}
+
+.animate-drift {
+  animation: drift 12s ease-in-out infinite;
+}
+
+.animate-drift-slow {
+  animation: drift 16s ease-in-out infinite;
+}
+
+.animate-drift-reverse {
+  animation: drift-reverse 14s ease-in-out infinite;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
 /* Subtle background grid for hero */
 .bg-grid {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.02) 0, rgba(0, 0, 0, 0.02) 0.5px, transparent 0.5px, transparent 100%),

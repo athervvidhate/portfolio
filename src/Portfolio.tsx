@@ -223,26 +223,20 @@ export default function Portfolio() {
         {/* Enhanced Full Screen Hero Section */}
         <div className="h-screen flex flex-col items-center justify-center px-4 relative overflow-hidden">
           {/* Animated Background Elements */}
-          <div className="absolute inset-0 overflow-hidden">
-            {/* Floating Data Points */}
-            <div className="absolute top-20 left-10 w-2 h-2 bg-amber-400 rounded-full animate-pulse opacity-60"></div>
-            <div className="absolute top-40 right-20 w-3 h-3 bg-orange-400 rounded-full animate-bounce opacity-40"></div>
-            <div className="absolute bottom-40 left-20 w-1 h-1 bg-rose-400 rounded-full animate-ping opacity-80"></div>
-            <div className="absolute top-60 left-1/4 w-2 h-2 bg-amber-300 rounded-full animate-pulse opacity-50"></div>
-            <div className="absolute bottom-60 right-1/3 w-1 h-1 bg-orange-300 rounded-full animate-bounce opacity-70"></div>
-            
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            {/* Glowing Orbs */}
+            <div className="absolute top-24 left-12 w-16 h-16 rounded-full bg-amber-400/20 blur-xl animate-drift"></div>
+            <div className="absolute top-1/3 right-20 w-12 h-12 rounded-full bg-rose-500/15 blur-lg animate-drift-reverse" style={{ animationDelay: '2s' }}></div>
+            <div className="absolute bottom-32 left-24 w-20 h-20 rounded-full bg-orange-400/15 blur-2xl animate-drift-slow" style={{ animationDelay: '4s' }}></div>
 
+            {/* Gradient Blobs */}
+            <div className="absolute top-1/4 left-1/3 h-16 w-16 rounded-full bg-gradient-to-br from-amber-400/35 via-orange-400/15 to-rose-400/25 blur-md animate-drift" style={{ animationDelay: '1.5s' }}></div>
+            <div className="absolute bottom-24 right-1/4 h-14 w-14 rounded-full bg-gradient-to-br from-rose-400/25 via-amber-400/15 to-orange-400/25 blur-md animate-drift-reverse" style={{ animationDelay: '3s' }}></div>
 
-            {/* Floating Code Elements */}
-            <div className="absolute top-32 right-32 text-xs text-gray-700 dark:text-neutral-600 font-mono opacity-40 animate-float">
-              <span className="text-blue-600 dark:text-blue-400">def</span> <span className="text-yellow-600 dark:text-yellow-300">analyze_data</span>()
-            </div>
-            <div className="absolute bottom-32 left-32 text-xs text-gray-700 dark:text-neutral-600 font-mono opacity-40 animate-float" style={{animationDelay: '2s'}}>
-              <span className="text-green-600 dark:text-green-400">return</span> <span className="text-purple-600 dark:text-purple-400">insights</span>
-            </div>
-            <div className="absolute top-1/2 left-16 text-xs text-gray-700 dark:text-neutral-600 font-mono opacity-40 animate-float" style={{animationDelay: '4s'}}>
-              <span className="text-blue-600 dark:text-blue-400">import</span> <span className="text-yellow-600 dark:text-yellow-300">pandas</span>
-            </div>
+            {/* Floating Accents */}
+            <div className="absolute top-16 right-32 h-10 w-10 rounded-full bg-amber-400/12 blur-lg animate-drift" style={{ animationDelay: '1s' }}></div>
+            <div className="absolute bottom-20 left-16 h-8 w-8 rounded-full bg-rose-400/12 blur-md animate-drift-reverse" style={{ animationDelay: '2.5s' }}></div>
+            <div className="absolute top-1/2 left-10 h-12 w-12 rounded-full bg-orange-400/10 blur-[22px] animate-drift-slow" style={{ animationDelay: '5s' }}></div>
           </div>
 
           {/* Main Content */}
@@ -348,7 +342,7 @@ export default function Portfolio() {
                 </div>
 
                 {/* Code Content */}
-                <div className="p-4 font-mono text-xs leading-relaxed max-h-80 overflow-y-auto">
+                <div className="p-4 font-mono text-xs leading-relaxed max-h-80 overflow-y-auto scrollbar-hidden">
                   <div className="text-gray-600 dark:text-gray-400">
                     <span className="text-purple-600 dark:text-purple-400">from</span> <span className="text-gray-900 dark:text-white">life</span>{" "}
                     <span className="text-purple-600 dark:text-purple-400">import</span> <span className="text-yellow-600 dark:text-yellow-300">Human</span>
