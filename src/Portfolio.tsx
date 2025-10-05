@@ -77,6 +77,14 @@ export default function Portfolio() {
 
   const projects = [
     {
+      title: "Concert Scout AI",
+      description: "Designed and launched an AI-powered concert recommendation platform for 150+ users, building a multi-agent system to deliver personalized suggestions and deploying scalable infrastructure with user session management and analytics tracking.",
+      tech: ["Python", "FastAPI", "Redis", "Next.js", "Google ADK"],
+      github: "https://github.com/athervvidhate/ConcertScoutAI",
+      demo: "https://concertscout.app",
+      image: "/concertscout.png",
+    },
+    {
       title: 'Fitness Program Recommendation System',
       description: 'Built and deployed a web app that recommends full workout programs from a 600k+ row dataset of user generated workouts using fine‑tuned ALBERT/RoBERTa sentence embeddings, cosine similarity, and K‑Means clustering. Dockerized for easy deployment and deployed on GCP.',
       tech: ['Python', 'Docker', 'GCP', 'Transformers', 'scikit-learn', 'Streamlit'],
@@ -86,12 +94,11 @@ export default function Portfolio() {
       image: '/lifting.png',
     },
     {
-      title: "Concert Scout AI",
-      description: "Designed and launched an AI-powered concert recommendation platform for 150+ users, building a multi-agent system to deliver personalized suggestions and deploying scalable infrastructure with user session management and analytics tracking.",
-      tech: ["Python", "FastAPI", "Redis", "Next.js", "Google ADK"],
-      github: "https://github.com/athervvidhate/ConcertScoutAI",
-      demo: "https://concertscout.app",
-      image: "/concertscout.png",
+      title: "Power Outage Analysis",
+      description: 'Cleaned and engineered features from power outage dataset and used techniques like one-hot encoding, hyperparameter tuning, and cross-validation to build optimized Random Forest models predicting outage severity, achieving a 15% accuracy improvement.',
+      tech: ["Python", "scikit-learn", "Hypothesis Testing", "Data Science Lifecycle"],
+      demo: "https://atherv.com/poweroutageanalysis",
+      image: "/poweroutages.png",
     },
     {
       title: "Multiple Linear Regression from Scratch",
@@ -100,13 +107,6 @@ export default function Portfolio() {
       github: "https://github.com/athervvidhate/linear-regression",
       demo: "https://atherv.com/linreg",
       image: "/linreg.png",
-    },
-    {
-      title: "Power Outage Analysis",
-      description: 'Cleaned and engineered features from power outage dataset and used techniques like one-hot encoding, hyperparameter tuning, and cross-validation to build optimized Random Forest models predicting outage severity, achieving a 15% accuracy improvement.',
-      tech: ["Python", "scikit-learn", "Hypothesis Testing", "Data Science Lifecycle"],
-      demo: "https://atherv.com/poweroutageanalysis",
-      image: "/poweroutages.png",
     },
     {
       title: "Body Sway Research Lab",
@@ -699,12 +699,20 @@ export default function Portfolio() {
                     </div>
 
                     <div className="flex space-x-4">
-                    {project.demo && <a
-                        href={project.demo}
-                        className="text-green-400 hover:text-green-300 text-sm transition-colors duration-300"
-                      >
-                        View Project →
-                      </a> }
+                    {project.demo && (
+                      project.title === 'Fitness Program Recommendation System' ? (
+                        <span className="text-gray-500 text-sm">
+                          View Project (Temporarily Down)
+                        </span>
+                      ) : (
+                        <a
+                          href={project.demo}
+                          className="text-green-400 hover:text-green-300 text-sm transition-colors duration-300"
+                        >
+                          View Project →
+                        </a>
+                      )
+                    )}
                       {project.walkthrough && <a
                         href={project.walkthrough}
                         className="text-red-400 hover:text-green-300 text-sm transition-colors duration-300"
