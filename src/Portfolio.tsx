@@ -90,7 +90,7 @@ export default function Portfolio() {
       tech: ['Python', 'Docker', 'GCP', 'Transformers', 'scikit-learn', 'Streamlit'],
       github: 'https://github.com/athervvidhate/liftingML',
       demo: 'https://www.workout.atherv.com',
-      walkthrough: 'https://workout-walkthrough.atherv.com',
+      walkthrough: 'https://workout.atherv.com',
       image: '/lifting.png',
     },
     {
