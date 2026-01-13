@@ -128,13 +128,13 @@ export default function Portfolio() {
   const education = {
     degree: "B.S. Data Science, Minor in Business Analytics",
     school: "UC San Diego",
-    expectedGrad: "June 2027",
-    gpa: "3.9",
+    expectedGrad: "March 2027",
+    gpa: "3.90",
     relevantCourses: [
-        "Information Technology - Business Analytics (MGT 153)*",
-        "Business Analytics (MGT 151)*",
-        "Probabilistic Modeling & Machine Learning (DSC 140A)*",
-        "Recommender Systems & Web Mining (CSE 158)*",
+        "Information Technology - Business Analytics (MGT 153)",
+        "Business Analytics (MGT 151)",
+        "Probabilistic Modeling & Machine Learning (DSC 140A)",
+        "Recommender Systems & Web Mining (CSE 158)",
         "Systems for Scalable Analytics (DSC 102)",
         "Practice of Data Science (DSC 80)",
         "Theoretical Foundations of Data Science (DSC 40A/40B)",
@@ -149,9 +149,14 @@ export default function Portfolio() {
 
   const experience = [
     {
+      title: "AI Research & Development Intern",
+      organization: "Intellinum",
+      period: "Jan 2026 - Present",
+    },
+    {
       title: "Full-Stack Developer Intern",
       organization: "Nexa Tax",
-      period: "Aug 2025 - Present",
+      period: "Aug 2025 - Dec 2025",
       description: "Delivered 95% structured data extraction accuracy in production-grade AI tax processing system with 100+ PDF documents processed through RAG pipeline, achieving structured data extraction from financial documents with 23 categories",
       description2: "Optimized computer vision pipeline achieving 60% reduction in processing time through YOLO object detection and multimodal LLM architecture for receipt/income document processing, with 100% uptime for 1000+ concurrent users.",
       description3: "Engineered scalable Flask REST API with LangChain and LangGraph state management, implementing 8+ endpoints for chatbot interaction and conversation history tracking with Postgres persistence and user session management."
@@ -181,11 +186,11 @@ export default function Portfolio() {
       description3: "Designed and delivered an interactive Tableau dashboard analyzing member demographics, retention patterns, and growth opportunities, driving data-backed engagement initiatives."
     },
     {
-      title: "Active Member",
+      title: "Historian",
       organization: "Tau Kappa Epsilon",
       period: "Sep 2024 - Present",
       description: "Built Tau Kappa Epsilon alumni engagement portal using Next.js and React to support donations, networking, and access to chapter history for 1000+ members",
-      description2: "Implemented software development lifecycle practices including conventional commits and code review standards to ensure high code quality.",
+      description2: "Implemented software development lifecycle practices including conventional commits and code review standards to ensure high code quality."
     },
   ]
 
@@ -594,10 +599,13 @@ export default function Portfolio() {
                       <h5 className="text-md font-medium text-orange-500 mb-3">Machine Learning & Advanced Topics</h5>
                       <div className="grid md:grid-cols-2 gap-3">
                         <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
-                          <span className="text-gray-700 dark:text-gray-300 text-sm">Probabilistic Modeling & Machine Learning (DSC 140A)*</span>
+                          <span className="text-gray-700 dark:text-gray-300 text-sm">Representation Learning (DSC 140B)*</span>
                         </div>
                         <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
-                          <span className="text-gray-700 dark:text-gray-300 text-sm">Recommender Systems & Web Mining (CSE 158)*</span>
+                          <span className="text-gray-700 dark:text-gray-300 text-sm">Probabilistic Modeling & Machine Learning (DSC 140A)</span>
+                        </div>
+                        <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
+                          <span className="text-gray-700 dark:text-gray-300 text-sm">Recommender Systems & Web Mining (CSE 158)</span>
                         </div>
                       </div>
                     </div>
@@ -605,6 +613,9 @@ export default function Portfolio() {
                     <div className="mb-6">
                       <h5 className="text-md font-medium text-rose-500 mb-3">Mathematics</h5>
                       <div className="grid md:grid-cols-2 gap-3">
+                        <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
+                          <span className="text-gray-700 dark:text-gray-300 text-sm">Data Analysis and Inference (MATH 189)*</span>
+                        </div>
                         <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
                           <span className="text-gray-700 dark:text-gray-300 text-sm">Probability and Statistics (MATH 183)</span>
                         </div>
@@ -624,10 +635,13 @@ export default function Portfolio() {
                       <h5 className="text-md font-medium text-amber-600 mb-3">Business Analytics</h5>
                       <div className="grid md:grid-cols-2 gap-3">
                         <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
-                          <span className="text-gray-700 dark:text-gray-300 text-sm">Information Technology - Business Analytics (MGT 153)*</span>
+                          <span className="text-gray-700 dark:text-gray-300 text-sm">Advanced Business Analytics (MGT 155)*</span>
                         </div>
                         <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
-                          <span className="text-gray-700 dark:text-gray-300 text-sm">Business Analytics (MGT 151)*</span>
+                          <span className="text-gray-700 dark:text-gray-300 text-sm">Information Technology - Business Analytics (MGT 153)</span>
+                        </div>
+                        <div className="bg-neutral-200 dark:bg-neutral-700 rounded-md p-3">
+                          <span className="text-gray-700 dark:text-gray-300 text-sm">Business Analytics (MGT 151)</span>
                         </div>
                       </div>
                     </div>
