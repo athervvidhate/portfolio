@@ -2,104 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Ensure the document background matches the theme (including overscroll). */
+/* True black/white backgrounds for editorial brutalism */
 html,
 body {
   min-height: 100%;
-  background-color: #fafafa; /* Tailwind: neutral-50 */
+  background-color: #ffffff;
 }
 
 html.dark,
 .dark body {
-  background-color: #171717; /* Tailwind: neutral-900 */
+  background-color: #000000;
 }
 
-/* Custom styles */
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-.purple-shadow {
-  box-shadow: 0 8px 32px 0 rgba(168, 85, 247, 0.18), 0 1.5px 0 0 #ede9fe;
-  border-radius: 1rem;
+/* Outlined text — stroke only, no fill. Use with text-black/text-white to set stroke color */
+.text-stroke {
+  -webkit-text-stroke: 3px black;
+  color: transparent;
 }
 
-/* Custom animations for hero section */
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
+.dark .text-stroke {
+  -webkit-text-stroke: 3px white;
 }
 
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-} 
-
-@keyframes drift {
-  0%, 100% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  50% {
-    transform: translate3d(16px, -18px, 0) scale(1.05);
-  }
-}
-
-@keyframes drift-reverse {
-  0%, 100% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  50% {
-    transform: translate3d(-14px, 14px, 0) scale(0.95);
-  }
-}
-
-.animate-drift {
-  animation: drift 12s ease-in-out infinite;
-}
-
-.animate-drift-slow {
-  animation: drift 16s ease-in-out infinite;
-}
-
-.animate-drift-reverse {
-  animation: drift-reverse 14s ease-in-out infinite;
-}
-
+/* Scrollbar hide */
 .scrollbar-hidden {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
 .scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
 
-/* Subtle background grid for hero */
-.bg-grid {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.02) 0, rgba(0, 0, 0, 0.02) 0.5px, transparent 0.5px, transparent 100%),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 0, rgba(0, 0, 0, 0.02) 0.5px, transparent 0.5px, transparent 100%);
-  background-size: 6px 6px;
-}
-
-.dark .bg-grid {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.015) 0, rgba(255, 255, 255, 0.015) 0.5px, transparent 0.5px, transparent 100%),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.015) 0, rgba(255, 255, 255, 0.015) 0.5px, transparent 0.5px, transparent 100%);
-  background-size: 6px 6px;
+/* Line clamp */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
