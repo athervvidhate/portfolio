@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Ensure the document background matches the theme (including overscroll). */
+html,
+body {
+  min-height: 100%;
+  background-color: #fafafa; /* Tailwind: neutral-50 */
+}
+
+html.dark,
+.dark body {
+  background-color: #171717; /* Tailwind: neutral-900 */
+}
+
 /* Custom styles */
 html {
   scroll-behavior: smooth;
