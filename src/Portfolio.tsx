@@ -371,10 +371,6 @@ export default function Portfolio() {
           )}
         </div>
 
-        {/* Footer */}
-        <footer className="mt-12 pt-6 border-t border-[#eeeeee] dark:border-[#2a2a2a] text-xs text-[#888888] dark:text-[#777777]">
-          <div>atherv vidhate</div>
-        </footer>
       </main>
     </div>
   )
