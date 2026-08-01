@@ -36,66 +36,43 @@ export default function Portfolio() {
       title: "Machine Learning Engineer Intern",
       organization: "Keysight Technologies",
       period: "June 2026 - Sep 2026",
-      description: "Developing demand anomaly detection models using PyOD ensembles, Isolation Forests, and deep learning autoencoders.",
-      bullets: [
-        "Developed a product-quarter demand anomaly detection pipeline combining Isolation Forest with a 7+ model PyOD ensemble establishing multi-model agreement scoring to reduce false-positive anomaly flags.",
-        "Built deep learning anomaly detectors, including a tabular autoencoder and quarterly LSTM autoencoder over engineered sequence-window datasets, to benchmark unsupervised anomaly detection against traditional ML baselines.",
-        "Engineered customer concentration and pipeline-context explainability features, enabling anomalies to be classified as customer-driven, broad-based, or pipeline-supported for business stakeholders.",
-      ],
+      summary: "Built demand anomaly detection pipelines combining Isolation Forests with 7+ PyOD model ensembles and deep LSTM autoencoders.",
       tech: "Python, PyTorch, PyOD, Isolation Forest, LSTM Autoencoders, Anomaly Detection",
     },
     {
       title: "AI Research & Development Intern",
       organization: "Intellinum",
       period: "Jan 2026 - June 2026",
-      description: "Architected autonomous AI pipelines and modular prompt systems for enterprise page generation and SCM integration.",
-      bullets: [
-        "Architected a 6-agent autonomous AI pipeline using Redis Streams and the Claude API to automate enterprise page generation and Oracle Fusion SCM integration, eliminating manual development cycles across 16+ REST API endpoints.",
-        "Engineered modular LLM agent prompt systems with structured tool-file decomposition, shared identity contracts, and a 3-step grounding protocol, enabling agents to produce zero-defect production JSON artifacts with no human intervention.",
-        "Developed a rules-based validation engine that statically analyzes FlexiPro Studio page JSON, detecting and triaging issues across 3 severity levels with structured output routed to the appropriate engineering, QA, or integration teams.",
-      ],
-      tech: "Python, Redis Streams, Claude API, Agentic Workflows, LLM Grounding, JSON Validation",
+      summary: "Architected 6-agent autonomous AI system with Redis Streams & Claude API for Oracle Fusion SCM, eliminating manual dev cycles.",
+      tech: "Python, Redis Streams, Claude API, Agentic Workflows, LLM Grounding",
     },
     {
       title: "Full-Stack Developer Intern",
       organization: "Nexa Tax",
       period: "Aug 2025 - Jan 2026",
-      description: "Delivered production AI document extraction infrastructure and real-time computer vision processing.",
-      bullets: [
-        "Delivered 95% structured data extraction accuracy in production-grade AI tax processing system with 100+ PDF documents processed through RAG pipeline, achieving structured data extraction from financial documents with 23 categories.",
-        "Optimized computer vision pipeline achieving 60% reduction in processing time through YOLO object detection and multimodal LLM architecture for receipt/income document processing, with 100% uptime for 1000+ concurrent users.",
-        "Engineered scalable Flask REST API with LangChain and LangGraph state management, implementing 8+ endpoints for chatbot interaction and conversation history tracking with Postgres persistence and user session management.",
-      ],
-      tech: "Python, Flask, LangChain, LangGraph, YOLO, PyTorch, RAG, Postgres, Docker",
+      summary: "Delivered 95% structured document extraction via RAG pipelines and optimized YOLO vision models with 60% faster processing.",
+      tech: "Python, Flask, LangChain, LangGraph, YOLO, PyTorch, RAG, Docker",
     },
     {
       title: "Economics Lab Research Assistant",
       organization: "UC San Diego Economics Dept",
       period: "Apr 2025 - Aug 2025",
-      description: "Built automated API extraction and graph network analysis pipelines on 100k+ historical campaign publications.",
-      bullets: [
-        "Engineered an open-source data pipeline using the Library of Congress API to extract over 100,000 entries on historical newspaper coverage of 19th-century presidential campaigns.",
-        "Analyzed relationships between historical newspaper titles using directed graphs and connected components analysis to identify and group over 300 related publications.",
-      ],
+      summary: "Engineered automated Library of Congress data pipeline extracting 100k+ entries and ran network graph analysis on historical media.",
       tech: "Python, Library of Congress API, Network Analysis, Pandas, Graph Theory",
     },
     {
       title: "Historian",
       organization: "Tau Kappa Epsilon",
       period: "Sep 2024 - Present",
-      description: "Built alumni portal and implemented SDLC engineering standards.",
-      bullets: [
-        "Built alumni engagement portal using Next.js and React to support donations, networking, and chapter history access for 1000+ members.",
-        "Implemented software development lifecycle practices including conventional commits and code review standards.",
-      ],
-      tech: "Next.js, React, TypeScript, SDLC, Code Review",
+      summary: "Built alumni engagement portal for 1000+ members using Next.js/React and established engineering SDLC standards.",
+      tech: "Next.js, React, TypeScript, SDLC",
     },
   ]
 
   const projects = [
     {
       title: "Fitness Program Recommendation System",
-      description: "Recommendation engine processing 600,000+ rows with K-Means clustering, cosine similarity, and PCA. Fine-tuned 2 BERT models for sentence-level embeddings. Deployed on GCP with automated CI/CD.",
+      description: "Workout recommendation engine processing 600k+ rows with K-Means clustering, cosine similarity, and fine-tuned BERT embeddings. Dockerized on GCP.",
       tech: "Python, Docker, GCP, BERT Transformers, scikit-learn, Streamlit",
       github: "https://github.com/athervvidhate/liftingML",
       demo: "https://workout.atherv.com",
@@ -103,34 +80,34 @@ export default function Portfolio() {
     },
     {
       title: "Concert Scout AI",
-      description: "Full-stack AI concert recommendation platform for 300+ active users. Multi-agent Gemini pipeline with FastAPI, Next.js, and Redis session management.",
+      description: "AI concert recommendation platform for 300+ active users built with a multi-agent Gemini pipeline, FastAPI, Next.js, and Redis.",
       tech: "Python, FastAPI, Redis, Next.js, Google Gemini",
       github: "https://github.com/athervvidhate/ConcertScoutAI",
       demo: "https://concertscout.app",
     },
     {
       title: "Power Outage Analysis",
-      description: "Data science pipeline with feature engineering, hyperparameter tuning, and cross-validation to build Random Forest models predicting outage severity (+15% accuracy gain).",
+      description: "End-to-end data science pipeline using Random Forests, hyperparameter tuning, and feature engineering to predict power outage severity (+15% accuracy).",
       tech: "Python, scikit-learn, Hypothesis Testing, Pandas",
       demo: "https://atherv.com/poweroutageanalysis",
     },
     {
       title: "Multiple Linear Regression from Scratch",
-      description: "Built a multiple linear regression model from scratch using gradient descent and train/test split evaluation. Deployed on Streamlit so users can input data and visualize predictions live.",
+      description: "Custom linear regression engine built from first principles using matrix calculus and gradient descent, with a live interactive Streamlit dashboard.",
       tech: "Python, NumPy, Pandas, Linear Algebra, Streamlit",
       github: "https://github.com/athervvidhate/linear-regression",
       demo: "https://atherv.com/linreg",
     },
     {
       title: "Body Sway Research Lab",
-      description: "Interactive data visualization exploring how body sway affects balance and posture, with animated scrollytelling and real-time statistical analysis through permutation testing.",
+      description: "Interactive data visualization investigating balance control and posture mechanics with animated scrollytelling and permutation testing.",
       tech: "JavaScript, D3.js, Statistical Analysis",
       github: "https://github.com/athervvidhate/bodysway",
       demo: "https://atherv.com/bodyswaylab",
     },
     {
       title: "MiniGit",
-      description: "Custom version control system implementing 10+ Git commands with Hashmaps and serialization for efficient data persistence and version tracking.",
+      description: "Custom Git version control system in Java implementing 10+ core Git subcommands with hash map key-value persistence.",
       tech: "Java, Version Control, System Architecture",
       github: "https://github.com/athervvidhate/MiniGit",
     },
@@ -262,7 +239,6 @@ export default function Portfolio() {
                   >
                     <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-x-3 gap-y-0.5 mb-1">
                       <div className="text-sm font-medium text-[#111111] dark:text-[#ffffff] leading-snug">
-                        <span className="text-[#888888] dark:text-[#888888] mr-1.5">&gt;</span>
                         <span>{item.title}</span>
                         <span className="text-[#777777] dark:text-[#888888]"> @ </span>
                         <span>{item.organization}</span>
@@ -272,24 +248,11 @@ export default function Portfolio() {
                       </span>
                     </div>
 
-                    {item.description && (
-                      <p className="text-xs text-[#666666] dark:text-[#a0a0a0] mt-1 pl-4 leading-relaxed">
-                        {item.description}
-                      </p>
-                    )}
+                    <p className="text-xs text-[#666666] dark:text-[#a0a0a0] leading-relaxed">
+                      {item.summary}
+                    </p>
 
-                    {item.bullets.length > 0 && (
-                      <ul className="mt-2 pl-4 space-y-1">
-                        {item.bullets.map((b, i) => (
-                          <li key={i} className="text-xs text-[#555555] dark:text-[#999999] leading-relaxed flex items-start gap-1.5">
-                            <span className="text-[#888888] dark:text-[#666666]">&bull;</span>
-                            <span>{b}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-
-                    <div className="text-[11px] text-[#888888] dark:text-[#777777] mt-1.5 pl-4">
+                    <div className="text-[11px] text-[#888888] dark:text-[#777777] mt-1.5">
                       {item.tech}
                     </div>
                   </div>
@@ -313,7 +276,6 @@ export default function Portfolio() {
                   >
                     <div className="flex items-baseline justify-between gap-x-3 text-sm font-medium mb-1">
                       <div className="text-[#111111] dark:text-[#ffffff]">
-                        <span className="text-[#888888] dark:text-[#888888] mr-1.5">&gt;</span>
                         <span>{project.title}</span>
                       </div>
 
@@ -345,11 +307,11 @@ export default function Portfolio() {
                       </div>
                     </div>
 
-                    <p className="text-xs text-[#666666] dark:text-[#a0a0a0] mt-1 pl-4 leading-relaxed">
+                    <p className="text-xs text-[#666666] dark:text-[#a0a0a0] leading-relaxed">
                       {project.description}
                     </p>
 
-                    <div className="text-[11px] text-[#888888] dark:text-[#777777] mt-1.5 pl-4">
+                    <div className="text-[11px] text-[#888888] dark:text-[#777777] mt-1.5">
                       {project.tech}
                     </div>
                   </div>
@@ -368,19 +330,18 @@ export default function Portfolio() {
               <div className="p-2.5 -mx-2.5 rounded-md hover:bg-[#f5f5f4] dark:hover:bg-[#232323] transition-colors duration-150 mb-4">
                 <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-x-3 gap-y-0.5 text-sm font-medium">
                   <div className="text-[#111111] dark:text-[#ffffff]">
-                    <span className="text-[#888888] dark:text-[#888888] mr-1.5">&gt;</span>
                     <span>University of California, San Diego</span>
                   </div>
                   <span className="text-xs text-[#888888] dark:text-[#888888] font-normal shrink-0 whitespace-nowrap">
                     [Expected Graduation: 2027]
                   </span>
                 </div>
-                <p className="text-xs text-[#555555] dark:text-[#b0b0b0] mt-1 pl-4">
+                <p className="text-xs text-[#555555] dark:text-[#b0b0b0] mt-1">
                   Bachelor of Science in Data Science, Minor in Business Analytics &bull; GPA: 3.90 / 4.00
                 </p>
               </div>
 
-              <div className="space-y-2.5 pl-4">
+              <div className="space-y-2.5">
                 {courseGroups.map((group, idx) => (
                   <div key={idx} className="text-xs">
                     <span className="text-[#888888] dark:text-[#888888] font-medium mr-1.5">{group.label}:</span>
@@ -398,7 +359,7 @@ export default function Portfolio() {
                 Skills
               </div>
 
-              <div className="space-y-2.5 pl-4">
+              <div className="space-y-2.5">
                 {skillCategories.map((group, idx) => (
                   <div key={idx} className="text-xs">
                     <span className="text-[#888888] dark:text-[#888888] font-medium mr-1.5">{group.category}:</span>
