@@ -8,11 +8,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['"Inter"', 'system-ui', 'sans-serif'],
-        'mono': ['"JetBrains Mono"', 'monospace'],
-      },
-      colors: {
-        'zinc-750': '#27272a',
+        'sans': ['"Geist"', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif'],
+        'mono': ['"Geist Mono"', 'ui-monospace', 'monospace'],
       },
     },
   },
