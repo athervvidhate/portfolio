@@ -8,11 +8,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'display': ['"Bebas Neue"', 'sans-serif'],
+        'sans': ['"Inter"', 'system-ui', 'sans-serif'],
+        'mono': ['"JetBrains Mono"', 'monospace'],
       },
       colors: {
-        'acid': '#CAFF00',
-        'gray-750': '#374151',
+        'zinc-750': '#27272a',
       },
     },
   },
