@@ -33,67 +33,57 @@ export default function Portfolio() {
 
   const experience = [
     {
+      title: "Machine Learning Engineer Intern",
+      organization: "Keysight Technologies",
+      period: "June 2026 — Sep 2026",
+      description: "Developing demand anomaly detection models using PyOD ensembles, Isolation Forests, and deep learning autoencoders.",
+      bullets: [
+        "Developed a product-quarter demand anomaly detection pipeline combining Isolation Forest with a 7+ model PyOD ensemble establishing multi-model agreement scoring to reduce false-positive anomaly flags.",
+        "Built deep learning anomaly detectors, including a tabular autoencoder and quarterly LSTM autoencoder over engineered sequence-window datasets, to benchmark unsupervised anomaly detection against traditional ML baselines.",
+        "Engineered customer concentration and pipeline-context explainability features, enabling anomalies to be classified as customer-driven, broad-based, or pipeline-supported for business stakeholders.",
+      ],
+      tech: "Python, PyTorch, PyOD, Isolation Forest, LSTM Autoencoders, Anomaly Detection",
+    },
+    {
       title: "AI Research & Development Intern",
       organization: "Intellinum",
-      period: "Jan 2026 — Present",
-      url: "https://intellinum.com",
-      description: "Researching and developing autonomous AI agent workflows and intelligent processing pipelines.",
-      bullets: [],
-      tech: "Python, PyTorch, LLMs, RAG, Agentic Workflows",
+      period: "Jan 2026 — June 2026",
+      description: "Architected autonomous AI pipelines and modular prompt systems for enterprise page generation and SCM integration.",
+      bullets: [
+        "Architected a 6-agent autonomous AI pipeline using Redis Streams and the Claude API to automate enterprise page generation and Oracle Fusion SCM integration, eliminating manual development cycles across 16+ REST API endpoints.",
+        "Engineered modular LLM agent prompt systems with structured tool-file decomposition, shared identity contracts, and a 3-step grounding protocol, enabling agents to produce zero-defect production JSON artifacts with no human intervention.",
+        "Developed a rules-based validation engine that statically analyzes FlexiPro Studio page JSON, detecting and triaging issues across 3 severity levels with structured output routed to the appropriate engineering, QA, or integration teams.",
+      ],
+      tech: "Python, Redis Streams, Claude API, Agentic Workflows, LLM Grounding, JSON Validation",
     },
     {
       title: "Full-Stack Developer Intern",
       organization: "Nexa Tax",
-      period: "Aug 2025 — Dec 2025",
-      description: "Built production AI tax processing infrastructure and high-throughput document extraction pipelines.",
+      period: "Aug 2025 — Jan 2026",
+      description: "Delivered production AI document extraction infrastructure and real-time computer vision processing.",
       bullets: [
-        "Delivered 95% structured data extraction accuracy in production-grade AI tax processing system with 100+ PDF documents processed through RAG pipeline.",
-        "Optimized computer vision pipeline achieving 60% reduction in processing time through YOLO object detection and multimodal LLM architecture, with 100% uptime for 1000+ concurrent users.",
-        "Engineered scalable Flask REST API with LangChain and LangGraph state management, implementing 8+ endpoints for chatbot interaction and conversation history tracking.",
+        "Delivered 95% structured data extraction accuracy in production-grade AI tax processing system with 100+ PDF documents processed through RAG pipeline, achieving structured data extraction from financial documents with 23 categories.",
+        "Optimized computer vision pipeline achieving 60% reduction in processing time through YOLO object detection and multimodal LLM architecture for receipt/income document processing, with 100% uptime for 1000+ concurrent users.",
+        "Engineered scalable Flask REST API with LangChain and LangGraph state management, implementing 8+ endpoints for chatbot interaction and conversation history tracking with Postgres persistence and user session management.",
       ],
-      tech: "Python, Flask, LangChain, LangGraph, YOLO, PyTorch, RAG, Docker",
-    },
-    {
-      title: "Software Engineer Intern",
-      organization: "smartQED",
-      period: "Apr 2025 — Aug 2025",
-      description: "Fine-tuned diagnostic LLMs and built Model Context Protocol integrations for real-time root cause analysis.",
-      bullets: [
-        "Fine-tuned a diagnostic LLM on 200+ complex technical reports, reducing root cause resolution time by 40% across product support cases.",
-        "Integrated an AI analytics agent with remote SQLite database via Model Context Protocol, enabling real-time analysis pipelines.",
-        "Constructed a high-fidelity dataset for LLM training by sourcing, cleaning, and structuring over 2GB of raw aviation incident data.",
-      ],
-      tech: "Python, LLM Fine-Tuning, Model Context Protocol, SQLite, PyTorch",
+      tech: "Python, Flask, LangChain, LangGraph, YOLO, PyTorch, RAG, Postgres, Docker",
     },
     {
       title: "Economics Lab Research Assistant",
       organization: "UC San Diego Economics Dept",
       period: "Apr 2025 — Aug 2025",
-      description: "Engineered large-scale data collection and graph network analysis pipelines on historical presidential news media.",
+      description: "Built automated API extraction and graph network analysis pipelines on 100k+ historical campaign publications.",
       bullets: [
         "Engineered an open-source data pipeline using the Library of Congress API to extract over 100,000 entries on historical newspaper coverage of 19th-century presidential campaigns.",
         "Analyzed relationships between historical newspaper titles using directed graphs and connected components analysis to identify and group over 300 related publications.",
-        "Developed Python scripts with API pagination and error recovery logic, ensuring 100% data retrieval completion.",
       ],
       tech: "Python, Library of Congress API, Network Analysis, Pandas, Graph Theory",
-    },
-    {
-      title: "Associate",
-      organization: "Triton Consulting Group",
-      period: "Jan 2024 — Present",
-      description: "Audited analytics architecture, developed data tagging systems, and designed interactive executive dashboards.",
-      bullets: [
-        "Audited client's product analytics platform and built a scalable, client-facing tagging infrastructure with 100+ unique tags across 20 categorized workflows.",
-        "Initiated and led a targeted outreach campaign connecting with 40+ regional companies, securing new partnerships and increasing project engagement by over 15%.",
-        "Designed and delivered an interactive Tableau dashboard analyzing member demographics, retention patterns, and growth opportunities.",
-      ],
-      tech: "Product Analytics, Tableau, Tagging Infrastructure, Client Strategy",
     },
     {
       title: "Historian",
       organization: "Tau Kappa Epsilon",
       period: "Sep 2024 — Present",
-      description: "Engineered member & alumni web portal and led engineering standard operating procedures.",
+      description: "Built alumni portal and implemented SDLC engineering standards.",
       bullets: [
         "Built alumni engagement portal using Next.js and React to support donations, networking, and chapter history access for 1000+ members.",
         "Implemented software development lifecycle practices including conventional commits and code review standards.",
@@ -104,45 +94,24 @@ export default function Portfolio() {
 
   const projects = [
     {
+      title: "Fitness Program Recommendation System",
+      description: "Recommendation engine processing 600,000+ rows with K-Means clustering, cosine similarity, and PCA. Fine-tuned 2 BERT models for sentence-level embeddings. Deployed on GCP with automated CI/CD.",
+      tech: "Python, Docker, GCP, BERT Transformers, scikit-learn, Streamlit",
+      github: "https://github.com/athervvidhate/liftingML",
+      demo: "https://workout.atherv.com",
+    },
+    {
       title: "Concert Scout AI",
-      description: "AI-powered concert recommendation platform for 150+ users. Multi-agent system delivering personalized music suggestions with session management and analytics.",
-      tech: "Python, FastAPI, Redis, Next.js, Google ADK",
+      description: "Full-stack AI concert recommendation platform for 300+ active users. Multi-agent Gemini pipeline with FastAPI, Next.js, and Redis session management.",
+      tech: "Python, FastAPI, Redis, Next.js, Google Gemini",
       github: "https://github.com/athervvidhate/ConcertScoutAI",
       demo: "https://concertscout.app",
     },
     {
-      title: "Fitness Program Recommendation System",
-      description: "Workout recommendation engine processing a 600k+ row dataset using fine-tuned ALBERT/RoBERTa sentence embeddings, cosine similarity, and K-Means clustering. Dockerized and deployed on GCP.",
-      tech: "Python, Docker, GCP, Transformers, scikit-learn, Streamlit",
-      github: "https://github.com/athervvidhate/liftingML",
-      demo: "https://www.workout.atherv.com",
-      status: "Temporarily Down",
-    },
-    {
       title: "Power Outage Analysis",
-      description: "Data science pipeline engineering features from power outage records. Hyperparameter tuning and Random Forest models boosting severity prediction by 15%.",
+      description: "Data science pipeline with feature engineering, hyperparameter tuning, and cross-validation to build Random Forest models predicting outage severity (+15% accuracy gain).",
       tech: "Python, scikit-learn, Hypothesis Testing, Pandas",
       demo: "https://atherv.com/poweroutageanalysis",
-    },
-    {
-      title: "Multiple Linear Regression from Scratch",
-      description: "Linear regression engine built from first principles using gradient descent and matrix calculus. Wrapped in a live Streamlit app for real-time visualization.",
-      tech: "Python, NumPy, Pandas, Linear Algebra, Streamlit",
-      github: "https://github.com/athervvidhate/linear-regression",
-      demo: "https://atherv.com/linreg",
-    },
-    {
-      title: "Body Sway Research Lab",
-      description: "Interactive statistical visualization investigating balance control and posture mechanics with animated scrollytelling and permutation testing.",
-      tech: "JavaScript, D3.js, Statistical Analysis",
-      github: "https://github.com/athervvidhate/bodysway",
-      demo: "https://atherv.com/bodyswaylab",
-    },
-    {
-      title: "MiniGit",
-      description: "Custom Git version control engine in Java implementing 10+ core Git subcommands with hash map key-value persistence and object serialization.",
-      tech: "Java, Version Control, Data Structures",
-      github: "https://github.com/athervvidhate/MiniGit",
     },
   ]
 
@@ -166,17 +135,16 @@ export default function Portfolio() {
   ]
 
   const skillCategories = [
-    { category: "Languages", items: "Python, SQL, Java, JavaScript, TypeScript, C++, HTML/CSS" },
-    { category: "Machine Learning & AI", items: "PyTorch, TensorFlow, scikit-learn, Transformers, RAG, LangChain, LangGraph, YOLO, Dask" },
-    { category: "Data & Systems", items: "Pandas, NumPy, Redis, SQLite, PostgreSQL, MongoDB, FastAPI, Docker, GCP, AWS" },
-    { category: "Analytics & Tools", items: "Tableau, Git, D3.js, Streamlit, Next.js, React, Linux" },
+    { category: "Programming Languages", items: "Python, SQL, R, Java, TypeScript, JavaScript, HTML/CSS" },
+    { category: "Frameworks & Libraries", items: "scikit-learn, PyTorch, TensorFlow, Spark, LangChain, pandas, Matplotlib, NumPy, Dask, FastAPI" },
+    { category: "Tools & Platforms", items: "Git, Docker, AWS, GCP, Redis, PostgreSQL, Tableau, Power BI, Excel" },
   ]
 
   return (
     <div className="min-h-screen bg-[#ffffff] dark:bg-[#191919] text-[#222222] dark:text-[#e3e3e3] selection:bg-[#333333] selection:text-white transition-colors duration-150">
       <main className="max-w-xl mx-auto px-5 py-14 sm:py-20 flex flex-col justify-between min-h-screen font-sans">
         <div>
-          {/* Header section (Matching reference image layout & typography) */}
+          {/* Header section */}
           <section className="mb-10">
             <div className="flex items-center justify-between mb-6">
               <span className="text-xs text-[#888888] dark:text-[#888888] tracking-wide">
@@ -196,7 +164,7 @@ export default function Portfolio() {
             </h1>
 
             <p className="text-sm sm:text-base leading-relaxed text-[#444444] dark:text-[#b0b0b0] mb-4">
-              I do data science, ML infrastructure, and web dev. I love to go deep into LLM systems, agentic workflows, and scalable data pipelines.
+              Data Science &amp; Machine Learning at UC San Diego. Building autonomous AI agent pipelines, demand anomaly detection systems, and high-throughput data infrastructure.
             </p>
 
             <div className="flex items-center gap-2 text-xs text-[#888888] dark:text-[#888888] mb-6">
@@ -239,7 +207,7 @@ export default function Portfolio() {
             </div>
           </section>
 
-          {/* Section Filter Pills (Notion block navigation) */}
+          {/* Section Filter Pills */}
           <div className="flex items-center gap-2 mb-8 text-xs">
             {[
               { id: "all", label: "all" },
@@ -342,18 +310,14 @@ export default function Portfolio() {
                           </a>
                         )}
                         {project.demo && (
-                          project.status ? (
-                            <span className="text-[#888888] dark:text-[#777777] italic text-[11px]">[{project.status}]</span>
-                          ) : (
-                            <a
-                              href={project.demo}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-[#666666] dark:text-[#888888] hover:text-[#111111] dark:hover:text-[#ffffff] underline underline-offset-2 decoration-[#cccccc] dark:decoration-[#444444] transition-colors"
-                            >
-                              demo
-                            </a>
-                          )
+                          <a
+                            href={project.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[#666666] dark:text-[#888888] hover:text-[#111111] dark:hover:text-[#ffffff] underline underline-offset-2 decoration-[#cccccc] dark:decoration-[#444444] transition-colors"
+                          >
+                            demo
+                          </a>
                         )}
                       </div>
                     </div>
@@ -381,13 +345,13 @@ export default function Portfolio() {
               <div className="p-2.5 -mx-2.5 rounded-md hover:bg-[#f5f5f4] dark:hover:bg-[#232323] transition-colors duration-150 mb-4">
                 <div className="text-sm font-medium text-[#111111] dark:text-[#ffffff]">
                   <span className="text-[#888888] dark:text-[#888888] mr-1.5">&gt;</span>
-                  <span>UC San Diego</span>
+                  <span>University of California, San Diego</span>
                   <span className="text-xs text-[#888888] dark:text-[#888888] font-normal ml-2">
-                    [Expected March 2027]
+                    [Expected Graduation: 2027]
                   </span>
                 </div>
                 <p className="text-xs text-[#555555] dark:text-[#b0b0b0] mt-1 pl-4">
-                  B.S. Data Science, Minor in Business Analytics &bull; GPA: 3.90 / 4.00
+                  Bachelor of Science in Data Science, Minor in Business Analytics
                 </p>
               </div>
 
@@ -421,7 +385,7 @@ export default function Portfolio() {
           )}
         </div>
 
-        {/* Minimal OS Footer */}
+        {/* Footer */}
         <footer className="mt-12 pt-6 border-t border-[#eeeeee] dark:border-[#2a2a2a] text-xs text-[#888888] dark:text-[#777777] flex items-center justify-between">
           <div>atherv vidhate &bull; 2026</div>
           <div>native interface</div>
