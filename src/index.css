@@ -5,6 +5,12 @@
 html,
 body {
   min-height: 100%;
+  background-color: #ffffff;
+}
+
+html.dark,
+.dark body {
+  background-color: #191919;
 }
 
 html {
@@ -13,40 +19,27 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background-color: #27272a;
+  background-color: #333333;
   color: #ffffff;
 }
 
-.dark ::selection {
-  background-color: #f4f4f5;
-  color: #18181b;
-}
-
-/* Custom minimal scrollbar */
+/* Custom subtle scrollbar */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #e4e4e7;
+  background: #d4d4d8;
   border-radius: 9999px;
 }
 .dark ::-webkit-scrollbar-thumb {
-  background: #27272a;
-}
-
-/* Faint hover effect utilities */
-.hover-item {
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease, background-color 0.2s ease;
-}
-.hover-item:hover {
-  transform: translateX(4px);
+  background: #333333;
 }
