@@ -153,6 +153,15 @@ export default function Portfolio() {
               </button>
             </div>
 
+            {/* Avatar (Option 2: Grayscale to Color on Hover) */}
+            <div className="mb-5">
+              <img
+                src="/photo.jpeg"
+                alt="Atherv Vidhate"
+                className="w-14 h-14 rounded-xl object-cover border border-[#333333] dark:border-[#333333] grayscale contrast-[0.95] opacity-85 hover:grayscale-0 hover:opacity-100 transition-all duration-300 ease-out"
+              />
+            </div>
+
             <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#111111] dark:text-[#ffffff] mb-4">
               hey, i’m atherv
             </h1>
