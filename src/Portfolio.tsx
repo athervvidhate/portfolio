@@ -146,11 +146,7 @@ export default function Portfolio() {
         <div>
           {/* Header section */}
           <section className="mb-10">
-            <div className="flex items-center justify-between mb-6">
-              <span className="text-xs text-[#888888] dark:text-[#888888] tracking-wide">
-                atherv.com
-              </span>
-
+            <div className="flex items-center justify-end mb-6">
               <button
                 onClick={toggleTheme}
                 className="text-xs text-[#888888] dark:text-[#888888] hover:text-[#111111] dark:hover:text-[#ffffff] transition-colors"
