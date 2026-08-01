@@ -158,7 +158,7 @@ export default function Portfolio() {
               <img
                 src="/photo.jpeg"
                 alt="Atherv Vidhate"
-                className="w-24 h-24 sm:w-28 sm:h-28 rounded-xl object-cover object-[center_25%] border border-[#2a2a2a] dark:border-[#2a2a2a] shrink-0"
+                className="w-24 h-24 sm:w-28 sm:h-28 rounded-xl object-cover object-[70%_25%] border border-[#2a2a2a] dark:border-[#2a2a2a] shrink-0"
               />
               <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#111111] dark:text-[#ffffff]">
                 hey, i’m atherv
