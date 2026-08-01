@@ -154,11 +154,11 @@ export default function Portfolio() {
             </div>
 
             {/* Avatar & Hero Text Inline */}
-            <div className="flex items-center gap-3.5 sm:gap-4 mb-6">
+            <div className="flex items-center gap-4 sm:gap-5 mb-6">
               <img
                 src="/photo.jpeg"
                 alt="Atherv Vidhate"
-                className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover border border-[#333333] dark:border-[#333333] shrink-0"
+                className="w-24 h-24 sm:w-28 sm:h-28 rounded-xl object-cover object-[center_25%] border border-[#2a2a2a] dark:border-[#2a2a2a] shrink-0"
               />
               <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#111111] dark:text-[#ffffff]">
                 hey, i’m atherv
