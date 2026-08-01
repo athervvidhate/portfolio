@@ -35,7 +35,7 @@ export default function Portfolio() {
     {
       title: "Machine Learning Engineer Intern",
       organization: "Keysight Technologies",
-      period: "June 2026 — Sep 2026",
+      period: "June 2026 - Sep 2026",
       description: "Developing demand anomaly detection models using PyOD ensembles, Isolation Forests, and deep learning autoencoders.",
       bullets: [
         "Developed a product-quarter demand anomaly detection pipeline combining Isolation Forest with a 7+ model PyOD ensemble establishing multi-model agreement scoring to reduce false-positive anomaly flags.",
@@ -47,7 +47,7 @@ export default function Portfolio() {
     {
       title: "AI Research & Development Intern",
       organization: "Intellinum",
-      period: "Jan 2026 — June 2026",
+      period: "Jan 2026 - June 2026",
       description: "Architected autonomous AI pipelines and modular prompt systems for enterprise page generation and SCM integration.",
       bullets: [
         "Architected a 6-agent autonomous AI pipeline using Redis Streams and the Claude API to automate enterprise page generation and Oracle Fusion SCM integration, eliminating manual development cycles across 16+ REST API endpoints.",
@@ -59,7 +59,7 @@ export default function Portfolio() {
     {
       title: "Full-Stack Developer Intern",
       organization: "Nexa Tax",
-      period: "Aug 2025 — Jan 2026",
+      period: "Aug 2025 - Jan 2026",
       description: "Delivered production AI document extraction infrastructure and real-time computer vision processing.",
       bullets: [
         "Delivered 95% structured data extraction accuracy in production-grade AI tax processing system with 100+ PDF documents processed through RAG pipeline, achieving structured data extraction from financial documents with 23 categories.",
@@ -71,7 +71,7 @@ export default function Portfolio() {
     {
       title: "Economics Lab Research Assistant",
       organization: "UC San Diego Economics Dept",
-      period: "Apr 2025 — Aug 2025",
+      period: "Apr 2025 - Aug 2025",
       description: "Built automated API extraction and graph network analysis pipelines on 100k+ historical campaign publications.",
       bullets: [
         "Engineered an open-source data pipeline using the Library of Congress API to extract over 100,000 entries on historical newspaper coverage of 19th-century presidential campaigns.",
@@ -82,7 +82,7 @@ export default function Portfolio() {
     {
       title: "Historian",
       organization: "Tau Kappa Epsilon",
-      period: "Sep 2024 — Present",
+      period: "Sep 2024 - Present",
       description: "Built alumni portal and implemented SDLC engineering standards.",
       bullets: [
         "Built alumni engagement portal using Next.js and React to support donations, networking, and chapter history access for 1000+ members.",
@@ -165,7 +165,7 @@ export default function Portfolio() {
 
             <div className="flex items-center gap-2 text-xs text-[#888888] dark:text-[#888888] mb-6">
               <span>📍</span>
-              <span>uc san diego &bull; san diego, ca</span>
+              <span>uc san diego • san diego, ca</span>
             </div>
 
             {/* Links bar */}
@@ -239,12 +239,14 @@ export default function Portfolio() {
                     key={idx}
                     className="p-2.5 -mx-2.5 rounded-md hover:bg-[#f5f5f4] dark:hover:bg-[#232323] transition-colors duration-150"
                   >
-                    <div className="text-sm font-medium text-[#111111] dark:text-[#ffffff] leading-snug">
-                      <span className="text-[#888888] dark:text-[#888888] mr-1.5">&gt;</span>
-                      <span>{item.title}</span>
-                      <span className="text-[#777777] dark:text-[#888888]"> @ </span>
-                      <span className="text-[#111111] dark:text-[#ffffff]">{item.organization}</span>
-                      <span className="text-xs text-[#888888] dark:text-[#888888] font-normal ml-2">
+                    <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-x-3 gap-y-0.5 mb-1">
+                      <div className="text-sm font-medium text-[#111111] dark:text-[#ffffff] leading-snug">
+                        <span className="text-[#888888] dark:text-[#888888] mr-1.5">&gt;</span>
+                        <span>{item.title}</span>
+                        <span className="text-[#777777] dark:text-[#888888]"> @ </span>
+                        <span>{item.organization}</span>
+                      </div>
+                      <span className="text-xs text-[#888888] dark:text-[#888888] font-normal shrink-0 whitespace-nowrap">
                         [{item.period}]
                       </span>
                     </div>
@@ -288,13 +290,13 @@ export default function Portfolio() {
                     key={idx}
                     className="p-2.5 -mx-2.5 rounded-md hover:bg-[#f5f5f4] dark:hover:bg-[#232323] transition-colors duration-150"
                   >
-                    <div className="flex items-baseline justify-between text-sm font-medium">
+                    <div className="flex items-baseline justify-between gap-x-3 text-sm font-medium mb-1">
                       <div className="text-[#111111] dark:text-[#ffffff]">
                         <span className="text-[#888888] dark:text-[#888888] mr-1.5">&gt;</span>
                         <span>{project.title}</span>
                       </div>
 
-                      <div className="flex items-center gap-3 text-xs">
+                      <div className="flex items-center gap-3 text-xs shrink-0 whitespace-nowrap">
                         {project.github && (
                           <a
                             href={project.github}
@@ -339,10 +341,12 @@ export default function Portfolio() {
               </div>
 
               <div className="p-2.5 -mx-2.5 rounded-md hover:bg-[#f5f5f4] dark:hover:bg-[#232323] transition-colors duration-150 mb-4">
-                <div className="text-sm font-medium text-[#111111] dark:text-[#ffffff]">
-                  <span className="text-[#888888] dark:text-[#888888] mr-1.5">&gt;</span>
-                  <span>University of California, San Diego</span>
-                  <span className="text-xs text-[#888888] dark:text-[#888888] font-normal ml-2">
+                <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-x-3 gap-y-0.5 text-sm font-medium">
+                  <div className="text-[#111111] dark:text-[#ffffff]">
+                    <span className="text-[#888888] dark:text-[#888888] mr-1.5">&gt;</span>
+                    <span>University of California, San Diego</span>
+                  </div>
+                  <span className="text-xs text-[#888888] dark:text-[#888888] font-normal shrink-0 whitespace-nowrap">
                     [Expected Graduation: 2027]
                   </span>
                 </div>
@@ -383,7 +387,7 @@ export default function Portfolio() {
 
         {/* Footer */}
         <footer className="mt-12 pt-6 border-t border-[#eeeeee] dark:border-[#2a2a2a] text-xs text-[#888888] dark:text-[#777777] flex items-center justify-between">
-          <div>atherv vidhate &bull; 2026</div>
+          <div>atherv vidhate - 2026</div>
           <div>native interface</div>
         </footer>
       </main>
