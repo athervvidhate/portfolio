@@ -99,6 +99,7 @@ export default function Portfolio() {
       tech: "Python, Docker, GCP, BERT Transformers, scikit-learn, Streamlit",
       github: "https://github.com/athervvidhate/liftingML",
       demo: "https://workout.atherv.com",
+      status: "Down",
     },
     {
       title: "Concert Scout AI",
@@ -112,6 +113,26 @@ export default function Portfolio() {
       description: "Data science pipeline with feature engineering, hyperparameter tuning, and cross-validation to build Random Forest models predicting outage severity (+15% accuracy gain).",
       tech: "Python, scikit-learn, Hypothesis Testing, Pandas",
       demo: "https://atherv.com/poweroutageanalysis",
+    },
+    {
+      title: "Multiple Linear Regression from Scratch",
+      description: "Built a multiple linear regression model from scratch using gradient descent and train/test split evaluation. Deployed on Streamlit so users can input data and visualize predictions live.",
+      tech: "Python, NumPy, Pandas, Linear Algebra, Streamlit",
+      github: "https://github.com/athervvidhate/linear-regression",
+      demo: "https://atherv.com/linreg",
+    },
+    {
+      title: "Body Sway Research Lab",
+      description: "Interactive data visualization exploring how body sway affects balance and posture, with animated scrollytelling and real-time statistical analysis through permutation testing.",
+      tech: "JavaScript, D3.js, Statistical Analysis",
+      github: "https://github.com/athervvidhate/bodysway",
+      demo: "https://atherv.com/bodyswaylab",
+    },
+    {
+      title: "MiniGit",
+      description: "Custom version control system implementing 10+ Git commands with Hashmaps and serialization for efficient data persistence and version tracking.",
+      tech: "Java, Version Control, System Architecture",
+      github: "https://github.com/athervvidhate/MiniGit",
     },
   ]
 
@@ -308,14 +329,18 @@ export default function Portfolio() {
                           </a>
                         )}
                         {project.demo && (
-                          <a
-                            href={project.demo}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-[#666666] dark:text-[#888888] hover:text-[#111111] dark:hover:text-[#ffffff] underline underline-offset-2 decoration-[#cccccc] dark:decoration-[#444444] transition-colors"
-                          >
-                            demo
-                          </a>
+                          project.status ? (
+                            <span className="text-[#888888] dark:text-[#777777] italic text-[11px]">[{project.status}]</span>
+                          ) : (
+                            <a
+                              href={project.demo}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-[#666666] dark:text-[#888888] hover:text-[#111111] dark:hover:text-[#ffffff] underline underline-offset-2 decoration-[#cccccc] dark:decoration-[#444444] transition-colors"
+                            >
+                              demo
+                            </a>
+                          )
                         )}
                       </div>
                     </div>
@@ -351,7 +376,7 @@ export default function Portfolio() {
                   </span>
                 </div>
                 <p className="text-xs text-[#555555] dark:text-[#b0b0b0] mt-1 pl-4">
-                  Bachelor of Science in Data Science, Minor in Business Analytics
+                  Bachelor of Science in Data Science, Minor in Business Analytics &bull; GPA: 3.90 / 4.00
                 </p>
               </div>
 
