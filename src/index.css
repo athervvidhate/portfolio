@@ -8,11 +8,6 @@ body {
   background-color: #ffffff;
 }
 
-html.dark,
-.dark body {
-  background-color: #191919;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -39,7 +34,4 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #d4d4d8;
   border-radius: 9999px;
-}
-.dark ::-webkit-scrollbar-thumb {
-  background: #333333;
 }
