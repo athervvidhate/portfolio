@@ -35,6 +35,22 @@
       {
         "source": "/data/(.*)",
         "destination": "https://bodysway.vercel.app/data/$1"
+      },
+      {
+        "source": "/fire-ready-forests",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/fire-ready-forests/:path*",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/process",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/results",
+        "destination": "/index.html"
       }
     ],
     "redirects": [

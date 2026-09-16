@@ -35,3 +35,43 @@ body {
   background: #d4d4d8;
   border-radius: 9999px;
 }
+
+.skill-icon,
+.skill-icon img,
+.skill-icon span {
+  transition: border-color 120ms ease, background-color 120ms ease, opacity 120ms ease, transform 120ms ease;
+}
+
+.skill-icon:is(:hover, :focus-visible) {
+  border-color: #b8b8b2;
+  background-color: #ffffff;
+}
+
+.skill-icon:is(:hover, :focus-visible) img {
+  opacity: 1;
+}
+
+.skill-icon:is(:hover, :focus-visible) span {
+  opacity: 1;
+  transform: translateX(-50%) translateY(2px);
+}
+
+.fr-canopy-scale {
+  background: linear-gradient(90deg, #440154 0%, #31688e 35%, #35b779 68%, #fde725 100%);
+}
+
+.fr-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}

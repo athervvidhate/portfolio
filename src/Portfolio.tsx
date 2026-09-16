@@ -14,37 +14,41 @@ export default function Portfolio() {
     {
       title: "Machine Learning Engineer Intern",
       organization: "Keysight Technologies",
-      period: "June 2026 - Sep 2026",
-      summary: "Built demand anomaly detection pipelines combining Isolation Forests with 7+ PyOD model ensembles and deep LSTM autoencoders.",
+      period: "Jun 2026 - Present",
+      summary: "Building demand anomaly detection pipelines with Isolation Forests, a seven-model PyOD ensemble, and LSTM autoencoders.",
       tech: "Python, PyTorch, PyOD, Isolation Forest, LSTM Autoencoders, Anomaly Detection",
     },
     {
       title: "AI Research & Development Intern",
       organization: "Intellinum",
-      period: "Jan 2026 - June 2026",
-      summary: "Architected 6-agent autonomous AI system with Redis Streams & Claude API for Oracle Fusion SCM, eliminating manual dev cycles.",
+      period: "Jan 2026 - Jun 2026",
+      summary: "Built a six-agent system with Redis Streams and Claude to generate and test Oracle Fusion SCM changes without a manual development loop.",
       tech: "Python, Redis Streams, Claude API, Agentic Workflows, LLM Grounding",
     },
     {
       title: "Full-Stack Developer Intern",
       organization: "Nexa Tax",
       period: "Aug 2025 - Jan 2026",
-      summary: "Delivered 95% structured document extraction via RAG pipelines and optimized YOLO vision models with 60% faster processing.",
+      summary: "Reached 95% structured-field accuracy in a RAG document extraction pipeline and cut YOLO processing time by 60%.",
       tech: "Python, Flask, LangChain, LangGraph, YOLO, PyTorch, RAG, Docker",
     },
     {
-      title: "Economics Lab Research Assistant",
-      organization: "UC San Diego Economics Dept",
+      title: "Software Engineer Intern",
+      organization: "smartQED",
       period: "Apr 2025 - Aug 2025",
-      summary: "Engineered automated Library of Congress data pipeline extracting 100k+ entries and ran network graph analysis on historical media.",
-      tech: "Python, Library of Congress API, Network Analysis, Pandas, Graph Theory",
+      summary: [
+        "Fine-tuned a diagnostic LLM on more than 200 technical reports, cutting root-cause resolution time by 40% across product support cases.",
+        "Connected an AI analytics agent to a remote SQLite database through Model Context Protocol and demonstrated the analysis workflow to senior leadership.",
+        "Built an LLM training dataset from more than 2 GB of aviation incident data for safety prediction models.",
+      ],
+      tech: "Python, LLM fine-tuning, Model Context Protocol, SQLite, Data Engineering",
     },
     {
-      title: "Historian",
-      organization: "Tau Kappa Epsilon",
-      period: "Sep 2024 - Present",
-      summary: "Built alumni engagement portal for 1000+ members using Next.js/React and established engineering SDLC standards.",
-      tech: "Next.js, React, TypeScript, SDLC",
+      title: "Economics Lab Research Assistant",
+      organization: "UC San Diego Economics Department",
+      period: "Apr 2025 - Aug 2025",
+      summary: "Built a Library of Congress data pipeline for more than 100,000 records and analyzed networks in historical media.",
+      tech: "Python, Library of Congress API, Pandas, Network Analysis",
     },
   ]
 
@@ -55,14 +59,26 @@ export default function Portfolio() {
       tech: "Python, Docker, GCP, BERT Transformers, scikit-learn, Streamlit",
       github: "https://github.com/athervvidhate/liftingML",
       demo: "https://workout.atherv.com",
-      status: "Down",
+      demoLabel: "walkthrough",
+    },
+    {
+      title: "Cadence",
+      description: "At LA Hacks 2026, we built a post-discharge companion for heart failure patients. I built the OCR and PII-removal pipeline that turns discharge paperwork into a medication regimen for daily voice check-ins.",
+      tech: "Python, Apple Vision, Gemma, Zetic, FastAPI, MongoDB",
+      devpost: "https://devpost.com/software/cadence-ch4rmf",
+    },
+    {
+      title: "Fire-Ready Forests",
+      description: "LiDAR and field-data pipeline for estimating tree structure and species, producing labeled treelists for physics-based wildfire simulations.",
+      tech: "Python, LiDAR, GeoPandas, scikit-learn, FastFuels",
+      demo: "/fire-ready-forests",
+      demoLabel: "case study",
     },
     {
       title: "Concert Scout AI",
       description: "AI concert recommendation platform for 300+ active users built with a multi-agent Gemini pipeline, FastAPI, Next.js, and Redis.",
       tech: "Python, FastAPI, Redis, Next.js, Google Gemini",
       github: "https://github.com/athervvidhate/ConcertScoutAI",
-      demo: "https://concertscout.app",
     },
     {
       title: "Power Outage Analysis",
@@ -99,22 +115,61 @@ export default function Portfolio() {
     },
     {
       label: "Machine Learning & AI",
-      courses: "DSC 140B (Representation Learning)*, DSC 140A (Probabilistic ML), CSE 158 (Recommender Systems)",
+      courses: "CSE 156 (Statistical NLP), CSE 153 (Machine Learning for Music), DSC 152 (Applied Statistical Data Analysis), DSC 140B (Representation Learning), DSC 140A (Probabilistic Modeling and ML), CSE 158 (Recommender Systems)",
     },
     {
       label: "Mathematics & Statistics",
-      courses: "MATH 189 (Data Analysis & Inference)*, MATH 183 (Stats), MATH 180A (Probability), MATH 18 (Linear Algebra), MATH 20C (Calculus III)",
+      courses: "MATH 189 (Data Analysis & Inference), MATH 183 (Statistics), MATH 180A (Probability), MATH 18 (Linear Algebra), MATH 20C (Calculus III)",
     },
     {
       label: "Business Analytics",
-      courses: "MGT 155 (Advanced Analytics)*, MGT 153 (IT Analytics), MGT 151 (Business Analytics)",
+      courses: "MGT 159T (Data Science with AI), MGT 155 (Advanced Business Analytics), MGT 153 (Information Technology and Business Analytics), MGT 151R (Business Analytics), MGT 71 (Operating Successful Business)",
     },
   ]
 
   const skillCategories = [
-    { category: "Programming Languages", items: "Python, SQL, R, Java, TypeScript, JavaScript, HTML/CSS" },
-    { category: "Frameworks & Libraries", items: "scikit-learn, PyTorch, TensorFlow, Spark, LangChain, pandas, Matplotlib, NumPy, Dask, FastAPI" },
-    { category: "Tools & Platforms", items: "Git, Docker, AWS, GCP, Redis, PostgreSQL, Tableau, Power BI, Excel" },
+    {
+      category: "Languages",
+      items: [
+        ["Python", "https://cdn.simpleicons.org/python/3f3f3f"],
+        ["SQL", "https://cdn.simpleicons.org/postgresql/3f3f3f"],
+        ["R", "https://cdn.simpleicons.org/r/3f3f3f"],
+        ["Java", "https://cdn.simpleicons.org/openjdk/3f3f3f"],
+        ["TypeScript", "https://cdn.simpleicons.org/typescript/3f3f3f"],
+        ["JavaScript", "https://cdn.simpleicons.org/javascript/3f3f3f"],
+        ["HTML", "https://cdn.simpleicons.org/html5/3f3f3f"],
+        ["CSS", "https://cdn.simpleicons.org/css/3f3f3f"],
+      ],
+    },
+    {
+      category: "Frameworks & libraries",
+      items: [
+        ["scikit-learn", "https://cdn.simpleicons.org/scikitlearn/3f3f3f"],
+        ["PyTorch", "https://cdn.simpleicons.org/pytorch/3f3f3f"],
+        ["TensorFlow", "https://cdn.simpleicons.org/tensorflow/3f3f3f"],
+        ["Apache Spark", "https://cdn.simpleicons.org/apachespark/3f3f3f"],
+        ["LangChain", "https://cdn.simpleicons.org/langchain/3f3f3f"],
+        ["pandas", "https://cdn.simpleicons.org/pandas/3f3f3f"],
+        ["Matplotlib", "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg"],
+        ["NumPy", "https://cdn.simpleicons.org/numpy/3f3f3f"],
+        ["Dask", "https://cdn.simpleicons.org/dask/3f3f3f"],
+        ["FastAPI", "https://cdn.simpleicons.org/fastapi/3f3f3f"],
+      ],
+    },
+    {
+      category: "Tools & platforms",
+      items: [
+        ["Git", "https://cdn.simpleicons.org/git/3f3f3f"],
+        ["Docker", "https://cdn.simpleicons.org/docker/3f3f3f"],
+        ["AWS", "https://cdn.jsdelivr.net/npm/simple-icons@12.4.0/icons/amazonwebservices.svg"],
+        ["Google Cloud", "https://cdn.simpleicons.org/googlecloud/3f3f3f"],
+        ["Redis", "https://cdn.simpleicons.org/redis/3f3f3f"],
+        ["PostgreSQL", "https://cdn.simpleicons.org/postgresql/3f3f3f"],
+        ["Tableau", "https://cdn.jsdelivr.net/npm/simple-icons@12.4.0/icons/tableau.svg"],
+        ["Power BI", "https://cdn.jsdelivr.net/npm/simple-icons@12.4.0/icons/powerbi.svg"],
+        ["Excel", "https://cdn.jsdelivr.net/npm/simple-icons@12.4.0/icons/microsoftexcel.svg"],
+      ],
+    },
   ]
 
   return (
@@ -136,12 +191,11 @@ export default function Portfolio() {
             </div>
 
             <p className="text-sm sm:text-base leading-relaxed text-[#444444] mb-4">
-              Data Science &amp; Machine Learning at UC San Diego. Building autonomous AI agent pipelines, demand anomaly detection systems, and high-throughput data infrastructure.
+              Data science and machine learning at UC San Diego. I currently build demand forecasting and anomaly detection systems at Keysight.
             </p>
 
-            <div className="flex items-center gap-2 text-xs text-[#888888] mb-6">
-              <span>📍</span>
-              <span>uc san diego • san diego, ca</span>
+            <div className="text-xs text-[#888888] mb-6">
+              uc san diego • san diego, ca
             </div>
 
             {/* Links bar */}
@@ -226,9 +280,13 @@ export default function Portfolio() {
                       </span>
                     </div>
 
-                    <p className="text-xs text-[#666666] leading-relaxed">
-                      {item.summary}
-                    </p>
+                    {Array.isArray(item.summary) ? (
+                      <ul className="list-disc pl-4 space-y-1 text-xs text-[#666666] leading-relaxed">
+                        {item.summary.map((point) => <li key={point}>{point}</li>)}
+                      </ul>
+                    ) : (
+                      <p className="text-xs text-[#666666] leading-relaxed">{item.summary}</p>
+                    )}
 
                     <div className="text-[11px] text-[#888888] mt-1.5">
                       {item.tech}
@@ -268,19 +326,25 @@ export default function Portfolio() {
                             github
                           </a>
                         )}
+                        {project.devpost && (
+                          <a
+                            href={project.devpost}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[#666666] hover:text-[#111111] underline underline-offset-2 decoration-[#cccccc] transition-colors"
+                          >
+                            devpost
+                          </a>
+                        )}
                         {project.demo && (
-                          project.status ? (
-                            <span className="text-[#888888] italic text-[11px]">[{project.status}]</span>
-                          ) : (
-                            <a
-                              href={project.demo}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-[#666666] hover:text-[#111111] underline underline-offset-2 decoration-[#cccccc] transition-colors"
-                            >
-                              demo
-                            </a>
-                          )
+                          <a
+                            href={project.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[#666666] hover:text-[#111111] underline underline-offset-2 decoration-[#cccccc] transition-colors"
+                          >
+                            {project.demoLabel ?? "demo"}
+                          </a>
                         )}
                       </div>
                     </div>
@@ -317,6 +381,11 @@ export default function Portfolio() {
                 <p className="text-xs text-[#555555] mt-1">
                   Bachelor of Science in Data Science, Minor in Business Analytics &bull; GPA: 3.90 / 4.00
                 </p>
+                <ul className="mt-2 list-disc pl-4 text-xs leading-relaxed text-[#666666]">
+                  <li>
+                    Tau Kappa Epsilon historian, Sep 2024 to present. Built a Next.js alumni portal for more than 1,000 members.
+                  </li>
+                </ul>
               </div>
 
               <div className="space-y-2.5">
@@ -337,11 +406,25 @@ export default function Portfolio() {
                 Skills
               </div>
 
-              <div className="space-y-2.5">
+              <div className="space-y-7">
                 {skillCategories.map((group, idx) => (
-                  <div key={idx} className="text-xs">
-                    <span className="text-[#888888] font-medium mr-1.5">{group.category}:</span>
-                    <span className="text-[#555555]">{group.items}</span>
+                  <div key={idx}>
+                    <p className="text-[11px] text-[#888888] font-medium mb-2">{group.category}</p>
+                    <ul className="flex flex-wrap gap-1.5" aria-label={group.category}>
+                      {group.items.map(([name, icon]) => (
+                        <li
+                          key={name}
+                          tabIndex={0}
+                          aria-label={name}
+                          className="skill-icon group relative grid h-10 w-10 place-items-center rounded-md border border-[#e8e8e5] bg-[#fafaf9] outline-none"
+                        >
+                          <img src={icon} alt="" className="h-5 w-5 object-contain opacity-75" loading="lazy" />
+                          <span className="pointer-events-none absolute left-1/2 top-full z-10 mt-1.5 -translate-x-1/2 whitespace-nowrap rounded bg-[#222222] px-2 py-1 text-[10px] text-white opacity-0 shadow-sm">
+                            {name}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 ))}
               </div>
