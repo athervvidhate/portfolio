@@ -16,11 +16,11 @@ const projects = [
   { name: 'FitBuddy', kind: 'Currently building', description: 'A mobile workout logger and routine planner.', detail: 'Track active workouts with rest timers and exercise notes, build reusable routines, and import training history from Bolt, Hevy, or Strong. Currently being developed with Expo and Supabase.', tools: 'Expo, React Native, Supabase, NativeWind', href: 'https://github.com/athervvidhate/fitbuddy', action: 'View on GitHub' },
 ]
 const jobs = [
-  ['Keysight Technologies', 'Machine Learning Engineer Intern', 'Jun 2026 to present', 'Building demand anomaly detection pipelines with Isolation Forests, a seven-model PyOD ensemble, and LSTM autoencoders.'],
-  ['Intellinum', 'AI Research & Development Intern', 'Jan to Jun 2026', 'Built a six-agent system with Redis Streams and Claude to generate and test Oracle Fusion SCM changes.'],
-  ['Nexa Tax', 'Full-Stack Developer Intern', 'Aug 2025 to Jan 2026', 'Built a document extraction pipeline with 95% structured-field accuracy and cut YOLO processing time by 60%.'],
+  ['Keysight Technologies', 'Machine Learning Engineer Intern', 'Jun 2026 to present', 'Built a demand anomaly detection pipeline that cut monthly analyst alerts by 88%, with 82% alert precision. Backtested forecast intervals and selected a method that improved coverage from 64.9% to 95.7%.'],
+  ['Intellinum', 'AI Research & Development Intern', 'Jan to Jun 2026', 'Built a six-agent pipeline with Redis Streams and Claude to generate enterprise pages and integrate Oracle Fusion SCM APIs. Added schema validation and a rules-based checker that routes issues to engineering, QA, or integration teams.'],
+  ['Nexa Tax', 'Full-Stack Developer Intern', 'Aug 2025 to Jan 2026', 'Built a RAG pipeline that extracted 23 data categories from financial documents at 95% accuracy. Cut document processing time by 60% and shipped chatbot APIs with persistent sessions.'],
   ['smartQED', 'Software Engineer Intern', 'Apr to Aug 2025', 'Fine-tuned a diagnostic LLM on more than 200 technical reports, cutting root-cause resolution time by 40% across product support cases.'],
-  ['UC San Diego', 'Economics Lab Research Assistant', 'Apr to Aug 2025', 'Built a Library of Congress pipeline for more than 100,000 records and analyzed networks in historical media.'],
+  ['UC San Diego', 'Economics Lab Research Assistant', 'Apr to Aug 2025', 'Collected more than 100,000 historical newspaper records from the Library of Congress for research on presidential campaigns. Added retry and resume support for multi-day crawls, delivering more than 300 grouped publications.'],
 ]
 const directions = [
   { id: 'atlas', name: 'Research atlas', note: 'Work first. Real figures, open space, blue ink.' },

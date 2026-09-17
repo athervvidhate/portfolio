@@ -15,21 +15,21 @@ export default function Portfolio() {
       title: "Machine Learning Engineer Intern",
       organization: "Keysight Technologies",
       period: "Jun 2026 - Present",
-      summary: "Building demand anomaly detection pipelines with Isolation Forests, a seven-model PyOD ensemble, and LSTM autoencoders.",
-      tech: "Python, PyTorch, PyOD, Isolation Forest, LSTM Autoencoders, Anomaly Detection",
+      summary: "Built a demand anomaly detection pipeline that cut monthly analyst alerts by 88%, with 82% alert precision. Backtested forecast intervals and selected a method that improved coverage from 64.9% to 95.7%.",
+      tech: "Python, Snowflake SQL, Anomaly Detection, Forecast Evaluation, STL, CUSUM",
     },
     {
       title: "AI Research & Development Intern",
       organization: "Intellinum",
       period: "Jan 2026 - Jun 2026",
-      summary: "Built a six-agent system with Redis Streams and Claude to generate and test Oracle Fusion SCM changes without a manual development loop.",
+      summary: "Built a six-agent pipeline with Redis Streams and Claude to generate enterprise pages and integrate Oracle Fusion SCM APIs. Added schema validation and a rules-based checker that routes issues to engineering, QA, or integration teams.",
       tech: "Python, Redis Streams, Claude API, Agentic Workflows, LLM Grounding",
     },
     {
       title: "Full-Stack Developer Intern",
       organization: "Nexa Tax",
       period: "Aug 2025 - Jan 2026",
-      summary: "Reached 95% structured-field accuracy in a RAG document extraction pipeline and cut YOLO processing time by 60%.",
+      summary: "Built a RAG pipeline that extracted 23 data categories from financial documents at 95% accuracy. Cut document processing time by 60% and shipped chatbot APIs with persistent sessions.",
       tech: "Python, Flask, LangChain, LangGraph, YOLO, PyTorch, RAG, Docker",
     },
     {
@@ -47,8 +47,8 @@ export default function Portfolio() {
       title: "Economics Lab Research Assistant",
       organization: "UC San Diego Economics Department",
       period: "Apr 2025 - Aug 2025",
-      summary: "Built a Library of Congress data pipeline for more than 100,000 records and analyzed networks in historical media.",
-      tech: "Python, Library of Congress API, Pandas, Network Analysis",
+      summary: "Collected more than 100,000 historical newspaper records from the Library of Congress for research on presidential campaigns. Added retry and resume support for multi-day crawls, delivering more than 300 grouped publications.",
+      tech: "Python, Library of Congress API, Data Collection, Fault-Tolerant Crawling",
     },
   ]
 
