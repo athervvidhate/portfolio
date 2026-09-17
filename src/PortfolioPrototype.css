@@ -208,7 +208,7 @@
 .shelf-books-left { transform:rotate(-6deg); transform-origin:bottom; margin-right:12px; }
 .shelf-books-right { margin-left:10px; }
 .shelf-plank { position:relative; height:21px; background:linear-gradient(#caa074 0 6px,#926843 7px,#936a48 18px,#6e4b34 19px); box-shadow:0 17px 18px #3e492830; border-radius:2px; }
-.shelf-plank:before,.shelf-plank:after { content:''; position:absolute; top:21px; width:16px; height:26px; background:#5b6251; left:12%; clip-path:polygon(0 0,100% 0,0 100%); }
+.shelf-plank:before,.shelf-plank:after { content:''; position:absolute; top:21px; width:16px; height:26px; background:#5b6251; left:12%; clip-path:polygon(0 0,100% 0,100% 100%); }
 .shelf-plank:after { left:auto;right:12%; transform:scaleX(-1); }
 @media(max-width:1000px) { .shelf-contents { gap:12px; padding:0 12px; }.shelf-books span { padding:15px 7px; font-size:11px; }.shelf-project { padding-left:15px; min-height:240px; }.shelf-project strong { font-size:20px; }.shelf-project-4 { min-height:253px; }.shelf-project-5 { min-height:220px; } }
 @media(max-width:760px) {
