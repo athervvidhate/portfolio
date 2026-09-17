@@ -87,6 +87,7 @@ export function VariantWorkbench() {
         <div className="shelf-heading"><h2 id="shelf-title">A little further reading.</h2><p>Side projects, past work, and my reading shelf.<br />Pick one up.</p></div>
         {[[8,9,6],[4,5,7]].map((row,rowIndex)=><div className="shelf-row" key={rowIndex}>
           <div className="shelf-contents">
+            <div className="shelf-plank shelf-mobile-plank" aria-hidden="true"/>
             {row.map(i=><button className={`shelf-project shelf-project-${i}`} key={i} onClick={()=>setSelected(i)}><span className="book-category">{projects[i].kind}</span><BookDrawing kind={String(i)}/><strong>{projects[i].name}</strong><span className="book-open">Open project ↗</span></button>)}
             {rowIndex===0 ? <div className="shelf-books" aria-label="On my reading shelf"><span className="reading-parable">Parable of the Sower<BookDrawing kind="parable"/></span><span className="reading-disney" tabIndex={0}>Disney War<i className="reading-bookmark">Currently reading</i><BookDrawing kind="disney"/></span><span className="reading-meditations">Meditations<BookDrawing kind="meditations"/></span></div> : <div className="shelf-books" aria-label="More books I have read"><span className="reading-andromeda">The Andromeda Strain<BookDrawing kind="andromeda"/></span><span className="reading-atomic">Atomic Habits<BookDrawing kind="atomic"/></span></div>}
           </div><div className="shelf-plank" aria-hidden="true" />

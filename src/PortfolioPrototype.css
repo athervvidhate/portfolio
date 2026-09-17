@@ -222,10 +222,11 @@
  .shelf-books { display:flex; grid-column:1 / -1; transform:none; margin:0; gap:5px; justify-content:center; border-bottom:12px solid #926843; box-shadow:0 5px 7px #3e492820; }
  .shelf-books span { display:block; writing-mode:horizontal-tb; height:auto!important; min-height:64px; padding:12px 8px; font-size:11px; flex:1; max-width:130px; }
  .shelf-books-right { margin-top:5px; }
- .shelf-project { box-shadow:6px 3px 6px #293e3526,inset 5px 0 #0002,inset 8px 0 #fff1,0 10px 0 #926843; }
+ .shelf-project { box-shadow:6px 3px 6px #293e3526,inset 5px 0 #0002,inset 8px 0 #fff1; }
 }
 
 /* Two shelves keep project covers broad while leaving room for the reading list. */
+.shelf-mobile-plank { display:none; }
 .shelf-row + .shelf-row { margin-top:55px; }
 .shelf-contents { display:grid; grid-template-columns:repeat(3,minmax(0,250px)) 150px; justify-content:center; gap:26px; align-items:end; padding:0 24px; background:none; }
 .shelf-project { width:100%; max-width:none; min-height:0; height:280px; padding:21px 24px 23px; }
@@ -245,10 +246,11 @@
 .reading-disney:is(:hover,:focus) .reading-bookmark { top:-32px; left:auto; right:0; width:126px; height:auto; padding:5px 8px; font-size:11px; clip-path:none; white-space:nowrap; }
 @media(max-width:1000px) { .shelf-contents { grid-template-columns:repeat(3,minmax(0,1fr)) 115px; gap:16px; padding:0 12px; }.shelf-project { padding:18px; height:225px; }.shelf-project strong { font-size:24px; }.shelf-books span { padding:14px 7px; font-size:11px; height:196px; }.shelf-books span:nth-child(2) { height:184px; }.shelf-books span:nth-child(3) { height:177px; } }
 @media(max-width:760px) {
- .shelf-contents { grid-template-columns:1fr 1fr; gap:25px 15px; padding:0 5px; }
+ .shelf-contents { grid-template-columns:1fr 1fr; gap:0 15px; padding:0 5px; }
+ .shelf-mobile-plank { display:block; grid-column:1 / -1; grid-row:2; margin:0 -5px 45px; }
  .shelf-project { height:210px; min-height:0; padding:16px; margin-bottom:0; }
  .shelf-project strong { font-size:24px; }
- .shelf-books { grid-column:auto; height:210px; min-width:0; align-items:end; justify-content:center; border-bottom:10px solid #926843;box-shadow:none; }
+ .shelf-books { grid-column:auto; height:210px; min-width:0; align-items:end; justify-content:center; border-bottom:0;box-shadow:none; }
  .shelf-books span { writing-mode:vertical-rl; min-height:0; height:180px!important; max-width:none; padding:12px 7px; font-size:10px; flex:none; }
  .shelf-books span:nth-child(2) { height:173px!important; }
  .shelf-books span:nth-child(3) { height:165px!important; }
