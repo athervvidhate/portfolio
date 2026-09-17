@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
+    "prototype": "vite --open /?variant=atlas",
     "build": "vite build",
     "preview": "vite preview"
   },

@@ -12,3 +12,6 @@ lerna-debug.log*
 ehthumbs.db
 Thumbs.db
 
+
+# Vite production output
+dist/

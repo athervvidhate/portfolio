@@ -181,7 +181,7 @@ export default function Portfolio() {
             {/* Avatar & Hero Text Inline */}
             <div className="flex items-center gap-4 sm:gap-5 mb-6">
               <img
-                src="/photo.jpeg"
+                src="/atherv-canyon.jpeg"
                 alt="Atherv Vidhate"
                 className="w-24 h-24 sm:w-28 sm:h-28 rounded-xl object-cover object-[center_18%] border border-[#2a2a2a] shrink-0"
               />
@@ -228,7 +228,7 @@ export default function Portfolio() {
                 rel="noopener noreferrer"
                 className="text-[#555555] hover:text-[#111111] underline underline-offset-4 decoration-[#cccccc] transition-colors"
               >
-                resume pdf
+                resume
               </a>
             </div>
           </section>
@@ -379,7 +379,7 @@ export default function Portfolio() {
                   </span>
                 </div>
                 <p className="text-xs text-[#555555] mt-1">
-                  Bachelor of Science in Data Science, Minor in Business Analytics &bull; GPA: 3.90 / 4.00
+                  Bachelor of Science in Data Science, Minor in Business Analytics &bull; 3.91 GPA
                 </p>
                 <ul className="mt-2 list-disc pl-4 text-xs leading-relaxed text-[#666666]">
                   <li>
