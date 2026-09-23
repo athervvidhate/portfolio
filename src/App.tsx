@@ -7,12 +7,11 @@ const PortfolioPrototype = import.meta.env.DEV ? lazy(() => import('./PortfolioP
 
 function App() {
   const isFireReady = window.location.hostname.startsWith('fireready.') || window.location.pathname.startsWith('/fire-ready-forests')
-
   return isFireReady
     ? <FireReadyForests />
     : PortfolioPrototype && new URLSearchParams(window.location.search).has('variant')
       ? <Suspense fallback={<p>Loading design preview...</p>}><PortfolioPrototype /></Suspense>
-      : <Suspense fallback={<p>Loading portfolio...</p>}><WorkbenchPortfolio /></Suspense>
+      : <Suspense fallback={<div className="portfolio-loading" aria-label="Loading portfolio"><div className="loading-header" /><div className="loading-heading" /><div className="loading-desk" /></div>}><WorkbenchPortfolio /></Suspense>
 }
 
 export default App

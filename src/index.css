@@ -5,7 +5,7 @@
 html,
 body {
   min-height: 100%;
-  background-color: #ffffff;
+  background-color: #e6e7db;
 }
 
 html {
@@ -14,7 +14,7 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Avenir Next', Avenir, 'Segoe UI', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -34,12 +34,6 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #d4d4d8;
   border-radius: 9999px;
-}
-
-.skill-icon,
-.skill-icon img,
-.skill-icon span {
-  transition: border-color 120ms ease, background-color 120ms ease, opacity 120ms ease, transform 120ms ease;
 }
 
 .skill-icon:is(:hover, :focus-visible) {
@@ -63,6 +57,12 @@ body {
 .fr-code {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
+
+.portfolio-loading { max-width:1260px; min-height:100vh; margin:auto; padding:24px; background:#e6e7db; }
+.portfolio-loading>div { background:#d1d6c8; }
+.loading-header { height:36px; width:100%; border-bottom:1px solid #aab5a6; }
+.loading-heading { width:min(340px,65vw); height:62px; margin:70px 0 40px; }
+.loading-desk { width:100%; aspect-ratio:1200/690; }
 
 @media (prefers-reduced-motion: reduce) {
   html {
