@@ -1,63 +1,83 @@
 {
-    "rewrites": [
-      {
-        "source": "/poweroutageanalysis",
-        "destination": "https://illuminating-the-dark.vercel.app"
-      },
-      {
-        "source": "/poweroutageanalysis/:path*",
-        "destination": "https://illuminating-the-dark.vercel.app/:path*"
-      },
-      {
-        "source": "/bodyswaylab",
-        "destination": "https://bodysway.vercel.app"
-      },
-      {
-        "source": "/bodyswaylab/(.*)",
-        "destination": "https://bodysway.vercel.app/$1"
-      },
-      {
-        "source": "/style.css",
-        "destination": "https://bodysway.vercel.app/style.css"
-      },
-      {
-        "source": "/js/(.*)",
-        "destination": "https://bodysway.vercel.app/js/$1"
-      },
-      {
-        "source": "/assets/(.*)",
-        "destination": "https://bodysway.vercel.app/assets/$1"
-      },
-      {
-        "source": "/favicon.png",
-        "destination": "https://bodysway.vercel.app/favicon.png"
-      },
-      {
-        "source": "/data/(.*)",
-        "destination": "https://bodysway.vercel.app/data/$1"
-      },
-      {
-        "source": "/fire-ready-forests",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/fire-ready-forests/:path*",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/process",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/results",
-        "destination": "/index.html"
-      }
-    ],
-    "redirects": [
-      {
-        "source": "/linreg",
-        "destination": "https://athervvidhate-linear-regression.streamlit.app/",
-        "permanent": false
-      }
-    ]
-  }
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "avid.atherv.com"
+        }
+      ],
+      "destination": "/avid/index.html"
+    },
+    {
+      "source": "/:file(index\\.html|privacy\\.html|style\\.css)",
+      "has": [
+        {
+          "type": "host",
+          "value": "avid.atherv.com"
+        }
+      ],
+      "destination": "/avid/:file"
+    },
+    {
+      "source": "/poweroutageanalysis",
+      "destination": "https://illuminating-the-dark.vercel.app"
+    },
+    {
+      "source": "/poweroutageanalysis/:path*",
+      "destination": "https://illuminating-the-dark.vercel.app/:path*"
+    },
+    {
+      "source": "/bodyswaylab",
+      "destination": "https://bodysway.vercel.app"
+    },
+    {
+      "source": "/bodyswaylab/(.*)",
+      "destination": "https://bodysway.vercel.app/$1"
+    },
+    {
+      "source": "/style.css",
+      "destination": "https://bodysway.vercel.app/style.css"
+    },
+    {
+      "source": "/js/(.*)",
+      "destination": "https://bodysway.vercel.app/js/$1"
+    },
+    {
+      "source": "/assets/(.*)",
+      "destination": "https://bodysway.vercel.app/assets/$1"
+    },
+    {
+      "source": "/favicon.png",
+      "destination": "https://bodysway.vercel.app/favicon.png"
+    },
+    {
+      "source": "/data/(.*)",
+      "destination": "https://bodysway.vercel.app/data/$1"
+    },
+    {
+      "source": "/fire-ready-forests",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/fire-ready-forests/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/process",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/results",
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/linreg",
+      "destination": "https://athervvidhate-linear-regression.streamlit.app/",
+      "permanent": false
+    }
+  ]
+}
